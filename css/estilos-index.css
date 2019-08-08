@@ -1,0 +1,74 @@
+body{
+  padding-top: 56px;
+}
+
+/* Navigation */
+
+nav  {
+  background-color: #1f0b73;  
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+}
+
+/* .navbar-fixed-top.scrolled {
+  background-color: #1f0b73;  
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+  transition: background-color 300ms linear, box-shadow 300ms linear;
+} */
+.dropdown-submenu {
+  position: relative;
+}
+
+.dropdown-submenu a::after {
+  transform: rotate(-90deg);
+  position: absolute;
+  right: 6px;
+  top: .8em;
+}
+
+.dropdown-submenu .dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-left: .1rem;
+  margin-right: .1rem;
+}
+
+.dropdown-item:active {
+  background-color: #1f0b73;
+}
+
+/* Jumbotron Features */
+.titulo-jumbo {
+  color: #e76f2b;
+}
+.btn-orange {
+  background-color: transparent;
+  color: #e76f2b;
+}
+
+.btn-orange:hover {  
+  background-color: #e76f2b;
+  color: white;
+
+}
+/* Footer */
+footer {
+  background-color: #1f0b73;
+}
+footer a{
+  color: #e76f2b;
+}
+footer a:hover{
+  color: #eeea1f;
+}
+
+@media (max-width: 576px) { 
+  h1.display-3 {
+    font-size: 2.5rem;
+  }
+  footer a {
+    font-size: 0.8rem;
+  }
+  footer p {
+    font-size: 0.8rem;
+  }
+ }
