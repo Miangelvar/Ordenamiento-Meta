@@ -1,0 +1,33 @@
+.panel-flotante{
+    max-width: 60px;
+    background-color: #FFF;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding-top: 5px;
+    border-radius: 5px;
+}
+.contenedor-accesibilidad{
+    padding-bottom: 5px;
+    margin-left: 9px;
+}
+.TextBlanco{
+    color: white;
+}
+
+/* contraste de imagenes */
+.contraste{
+    -webkit-filter: contrast(100%);
+}
+/* contraste letra y background */
+.colorLetra{
+    color: black;
+    /*background-color: white;*/
+}
+.textoPrincipio{
+    background-color: rgb(233, 236, 239);
+}
+/*color letra footer*/
+.MenuFooter{
+    color: white;
+}
