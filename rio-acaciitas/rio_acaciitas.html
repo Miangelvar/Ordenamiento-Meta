@@ -16,6 +16,11 @@
 
   <!-- Custom styles -->
   <link href="../css/estilos-index.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+
+
+  <script src="../js/jquery.js"></script>
+  <script src="../js/jquery.dataTables.min.js"></script>
 
 </head>
 
@@ -139,10 +144,147 @@
                 <a class="nav-link" href="../contacto.html">Contacto</a>
               </li>
             </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
-                <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Buscar</button>
-              </form>
+            <input type="search" id="buscador" placeholder="Buscar aqui">
+            <div class="content-search">
+              <div class="content-table">
+                <table id="table">
+                <thead>
+                    <tr>
+                        <td></td>
+                    </tr>
+                </thead>
+    
+                <tbody>
+                    <tr>
+                        <td><a href="./diagnostico/diagnostico.html" target="_blank">Río Acaciitas, Diagnóstico</a></td>
+                    </tr>
+    
+                    <tr>
+                        <td><a href="./diagnostico/usuarios_agua.html" target="_blank">Río Acaciitas, Diagnóstico: Usuarios del agua</a></td>
+                    </tr>
+    
+                    <tr>
+                        <td><a href="./diagnostico/calidad_hidrologica.html" target="_blank" >Río Acaciitas, Diagnóstico: Calidad fisicoquímica e hidrobiológica</a></td>
+                    </tr>
+    
+                    <tr>
+                        <td><a href="./diagnostico/vertimientos.html" target="_blank">Río Acaciitas, Diagnóstico: Vertimientos y aguas contaminantes</a></td>
+                    </tr>
+    
+                    <tr>
+                        <td><a href="./diagnostico/oferta_hidrica.html" target="_blank">Río Acaciitas, Diagnóstico: Oferta hídrica y análisis de riesgo</a></td>
+                    </tr>
+    
+                    <tr>
+                        <td><a href="./diagnostico/demanda_hidrica.html" target="_blank">Río Acaciitas, Diagnóstico: Demanda hídrica</a></td>
+                    </tr>
+    
+                    <tr>
+                        <td><a href="./diagnostico/tenencia_tierra.html" target="_blank">Río Acaciitas, Diagnóstico: Tenencia de tierra</a></td>
+                    </tr>
+    
+                    <tr>
+                        <td><a href="./prospectiva/prospectiva.html" target="_blank">Río Acaciitas, Prospectiva</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="./prospectiva/demanda_proyectada.html" target="_blank">Río Acaciitas, Prospectiva: Demanda proyectada</a></td>
+                    </tr>
+                    <tr>
+                      <td><a href="./prospectiva/usos_potenciales.html" target="_blank">Río Acaciitas, Prospectiva: Usos potenciales por tramos</a></td>
+                    </tr>
+                    <tr>
+                      <td><a href="./prospectiva/escenarios_modelizacion.html" target="_blank">Río Acaciitas, Prospectiva: escenarios modelizacion</a></td>
+                    </tr>
+                    <tr>
+                      <td><a href="./formulacion/formulacion.html" target="_blank">Río Acaciitas, Formulación</a></td>
+                    </tr>
+                    <tr>
+                      <td><a href="./formulacion/inventario_usuarios.html" target="_blank">Río Acaciitas, Formulación: Inventario de usuarios</a></td>
+                    </tr>
+                    <tr>
+                      <td><a href="./formulacion/objetivos_calidad.html" target="_blank">Río Acaciitas, Formulación: Objetivos de calidad</a></td>
+                    </tr>
+                    <tr>
+                      <td><a href="./formulacion/zonas_uso.html" target="_blank">Río Acaciitas, Formulación: zonas y condiciones de uso</a></td>
+                    </tr>
+                    <tr>
+                      <td><a href="./formulacion/metas_quinquenales.html" target="_blank">Río Acaciitas, Formulación: Meta quinquenales</a></td>
+                    </tr>
+                    <tr>
+                      <td><a href="./lineas-estrategicas/lineas_estrategicas.html" target="_blank">Río Acaciitas, Líneas estratégicas</a></td>
+                    </tr>
+                    <tr>
+                      <td><a href="./lineas-estrategicas/instrumentacion.html" target="_blank">Río Acaciitas, Líneas estratégicas: Instrumentación de la corriente principal</a></td>
+                    </tr>
+                    <tr>
+                      <td><a href="./lineas-estrategicas/divulgacion.html" target="_blank">Río Acaciitas, Líneas estratégicas: Divulgación de riesgos</a></td>
+                    </tr>
+                    <tr>
+                      <td><a href="../rio-chichimene/diagnostico/diagnostico.html" target="_blank">Río Chichimene, Diagnóstico</a></td>
+                    </tr>
+                    <tr>
+                      <td><a href="../rio-chichimene/diagnostico/usuarios_agua.html" target="_blank">Río Chichimene, Diagnóstico: Usuarios del agua</a></td>
+                    </tr>
+                    <tr>
+                      <td><a href="../rio-chichimene/diagnostico/calidad_hidrologica.html" target="_blank">Río Chichimene, Diagnóstico: Calidad fisicoquímica e hidrobiológica</a></td>
+                    </tr>
+                    <tr>
+                      <td><a href="../rio-chichimene/diagnostico/vertimientos.html" target="_blank">Río Chichimene, Diagnóstico: Vertimientos y cargas contaminantes</a></td>
+                    </tr>
+                    <tr>
+                      <td><a href="../rio-chichimene/diagnostico/oferta_hidrica.html" target="_blank">Río Chichimene, Diagnóstico: Oferta hídrica y ánalisis de riesgos</a></td>
+                    </tr>
+                    <tr>
+                      <td><a href="../rio-chichimene/diagnostico/demanda_hidrica.html" target="_blank">Río Chichimene, Diagnóstico: Demanda hídrica</a></td>
+                    </tr>
+                    <tr>
+                      <td><a href="../rio-chichimene/diagnostico/tenencia_tierra.html" target="_blank">Río Chichimene, Diagnóstico: Tenencia de tierra</a></td>
+                    </tr>
+                    <tr>
+                      <td><a href="../rio-chichimene/prospectiva/prospectiva.html" target="_blank">Río Chichimene, Prospectiva</a></td>
+                    </tr>
+                    <tr>
+                      <td><a href="../rio-chichimene/prospectiva/demanda_proyectada.html" target="_blank">Río Chichimene, Prospectiva: Demanda proyectada</a></td>
+                    </tr>
+                    <tr>
+                      <td><a href="../rio-chichimene/prospectiva/usos_potenciales.html" target="_blank">Río Chichimene, Prospectiva: Usos potenciales por tramos</a></td>
+                    </tr>
+                    <tr>
+                      <td><a href=".../rio-chichimene/prospectiva/escenarios_modelizacion.html" target="_blank">Río Chichimene, Prospectiva: Escenarios de modelización</a></td>
+                    </tr>
+                    <tr>
+                      <td><a href="../rio-chichimene/formulacion/formulacion.html" target="_blank">Río Chichimene, Formulación</a></td>
+                    </tr>
+                    <tr>
+                      <td><a href="../rio-chichimene/formulacion/clasificacion_aguas.html" target="_blank">Río Chichimene, Formulación: Clasificación del agua</a></td>
+                    </tr>
+                    <tr>
+                      <td><a href="../rio-chichimene/formulacion/inventario_usuarios.html" target="_blank">Río Chichimene, Formulación: Inventario de usuarios</a></td>
+                    </tr>
+                    <tr>
+                      <td><a href="../rio-chichimene/formulacion/objetivos_calidad.html" target="_blank">Río Chichimene, Formulación: Objetivos de calidad</a></td>
+                    </tr>
+                    <tr>
+                      <td><a href="../rio-chichimene/formulacion/zonas_uso.html" target="_blank">Río Chichimene, Formulación: Zona/Condiciones de Usos</a></td>
+                    </tr>
+                    <tr>
+                      <td><a href="../rio-chichimene/formulacion/metas_quinquenales.html" target="_blank">Río Chichimene, Formulación: Metas quinquenales</a></td>
+                    </tr>
+                    <tr>
+                      <td><a href="../rio-chichimene/formulacion/estructuracion_porh.html" target="_blank">Río Chichimene, Formulación: Estructuración del PORH</a></td>
+                    </tr>
+                    <tr>
+                      <td><a href="../rio-chichimene/lineas-estrategicas/lineas_estrategicas.html" target="_blank">Río Chichimene, Líneas estratégicas</a></td>
+                    </tr>
+                    <tr>
+                      <td><a href="../rio-chichimene/lineas-estrategicas/instrumentacion.html" target="_blank">Río Chichimene, Líneas estratégicas: Instrumentación de la corriente principal</a></td>
+                    </tr>
+                    <tr>
+                      <td><a href="../rio-chichimene/lineas-estrategicas/divulgacion.html" target="_blank">Río Chichimene, Líneas estratégicas: Divulgación de riesgos</a></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>          
           </div>
       </div>
   </nav>
@@ -443,7 +585,7 @@
       <!-- /.container -->
     
   </footer> 
-
+  <script src="../../js/search.js"></script>
   <!-- Bootstrap core JavaScript -->
   <script src="../vendor/jquery/jquery.min.js"></script>
   <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
