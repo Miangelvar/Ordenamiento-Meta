@@ -16,325 +16,649 @@
 
   <!-- Custom styles -->
   <link href="../../css/estilos-index.css" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/estilos.css">
+  <link rel="stylesheet" href="../../css/style.css">
+
+
+  <script src="../../js/jquery.js"></script>
+  <script src="../../js/jquery.dataTables.min.js"></script>
 
 </head>
 
-<body>
+<body class="fondoBlanco miBody">
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark navbar-fixed-top fixed-top">
-      <div class="container">
-          <a class="navbar-brand" href="../../index.html">PORH</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" href="https://id.presidencia.gov.co/Paginas/presidencia.aspx" style="width: 108px; height: 24px;">
-                  <img class="img-fluid" src="../../img/Logopresidencia.png" alt="Presidencia">
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="http://www.minambiente.gov.co" style="width: 108px; height: 24px;">
-                  <img class="img-fluid" src="../../img/Minambiente2.png" alt="Ministerio Ambiente">
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="http://www.cormacarena.gov.co" style="width: 108px; height: 24px;">
-                  <img class="img-fluid" src="../../img/logo_horizontal_gris.png" alt="Cormacarena">
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../../index.html">Inicio <span class="sr-only">(Página actual)</span></a>
-              </li>
-              <li class="nav-item dropdown active">
-                <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Río Acaciitas
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Diagnóstico</a>
-                    <ul class="dropdown-menu">
-                      <a href="./diagnostico.html"><h6 class="dropdown-header">Diagnóstico</h6></a>
-                      <li><a class="dropdown-item" href="./usuarios_agua.html">Usuarios del agua</a></li>
-                      <li><a class="dropdown-item" href="./calidad_hidrologica.html">Calidad fisicoquímica e hidrobiológica</a></li>
-                      <li><a class="dropdown-item" href="./vertimientos.html">Vertimientos y cargas contaminantes</a></li>
-                      <li><a class="dropdown-item" href="./oferta_hidrica.html">Oferta hídrica y análisis de riesgos</a></li>
-                      <li><a class="dropdown-item" href="./demanda_hidrica.html">Demanda hídrica</a></li>
-                      <li><a class="dropdown-item" href="./tenencia_tierra.html">Tenencia de tierra</a></li>      
-                    </ul>
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-fixed-top fixed-top MenuFooter">
+    <div class="container">
+      <a class="navbar-brand MenuFooter" href="../../index.html">PORH</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="https://id.presidencia.gov.co/Paginas/presidencia.aspx"
+              style="width: 108px; height: 24px;">
+              <img class="img-fluid contraste" src="../../img/Logopresidencia.png" alt="Presidencia">
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://www.minambiente.gov.co" style="width: 108px; height: 24px;">
+              <img class="img-fluid contraste" src="../../img/Minambiente2.png" alt="Ministerio Ambiente">
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://www.cormacarena.gov.co" style="width: 108px; height: 24px;">
+              <img class="img-fluid contraste" src="../../img/logo_horizontal_gris.png" alt="Cormacarena">
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link MenuFooter" href="../../index.html">Inicio <span class="sr-only">(Página
+                actual)</span></a>
+          </li>
+          <li class="nav-item dropdown active">
+            <a class="nav-link dropdown-toggle MenuFooter" href="http://example.com" id="navbarDropdownMenuLink"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Río Acaciitas
+            </a>
+            <ul class="dropdown-menu fondoBlanco miBody" aria-labelledby="navbarDropdownMenuLink">
+              <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle colorLetra" href="#">Diagnóstico</a>
+                <ul class="dropdown-menu fondoBlanco miBody">
+                  <a href="../diagnostico/diagnostico.html">
+                    <h6 class="dropdown-header colorLetra miH6">Diagnóstico</h6>
+                  </a>
+                  <li><a class="dropdown-item colorLetra" href="../diagnostico/usuarios_agua.html">Usuarios del agua</a></li>
+                  <li><a class="dropdown-item colorLetra" href="../diagnostico/calidad_hidrologica.html">Calidad fisicoquímica e
+                      hidrobiológica</a></li>
+                  <li><a class="dropdown-item colorLetra" href="../diagnostico/vertimientos.html">Vertimientos y cargas
+                      contaminantes</a></li>
+                  <li><a class="dropdown-item colorLetra" href="../diagnostico/oferta_hidrica.html">Oferta hídrica y análisis de riesgos</a>
                   </li>
-                  <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Prospectiva</a>
-                    <ul class="dropdown-menu">
-                      <a href="../prospectiva/prospectiva.html"><h6 class="dropdown-header">Prospectiva</h6></a>
-                      <li><a class="dropdown-item" href="../prospectiva/demanda_proyectada.html">Demanda proyectada</a></li>
-                      <li><a class="dropdown-item" href="../prospectiva/usos_potenciales.html">Usos potenciales por tramos</a></li>
-                      <li><a class="dropdown-item" href="../prospectiva/escenarios_modelizacion.html">Escenarios de modelización</a></li>                  
-                    </ul>
-                  </li>
-                  <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Formulación</a>
-                    <ul class="dropdown-menu">
-                      <a href="../formulacion/formulacion.html"><h6 class="dropdown-header">Formulación</h6></a>
-                      <li><a class="dropdown-item" href="../formulacion/inventario_usuarios.html">Inventario de usuarios</a></li>
-                      <li><a class="dropdown-item" href="../formulacion/objetivos_calidad.html">Objetivos de calidad</a></li>
-                      <li><a class="dropdown-item" href="../formulacion/zonas_uso.html">Zonas/condiciones de uso</a></li> 
-                      <li><a class="dropdown-item" href="../formulacion/metas_quinquenales.html">Metas quinquenales</a></li>              
-                    </ul>
-                  </li>
-                  <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Líneas estratégicas</a>
-                    <ul class="dropdown-menu">
-                      <a href="../lineas-estrategicas/lineas_estrategicas.html"><h6 class="dropdown-header">Líneas Estratégicas</h6></a>
-                      <li><a class="dropdown-item" href="../lineas-estrategicas/instrumentacion.html">Instrumentación de la corriente principal</a></li>
-                      <li><a class="dropdown-item" href="../lineas-estrategicas/divulgacion.html">Divulgación de riesgos</a></li>     
-                    </ul>
-                  </li>
+                  <li><a class="dropdown-item colorLetra" href="../diagnostico/demanda_hidrica.html">Demanda hídrica</a></li>
+                  <li><a class="dropdown-item colorLetra" href="../diagnostico/tenencia_tierra.html">Tenencia de tierra</a></li>
                 </ul>
               </li>
-              
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Río Chichimene
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Diagnóstico</a>
-                    <ul class="dropdown-menu">
-                      <a href="../../rio-chichimene/diagnostico/diagnostico.html"><h6 class="dropdown-header">Diagnóstico</h6></a>
-                      <li><a class="dropdown-item" href="../../rio-chichimene/diagnostico/usuarios_agua.html">Usuarios del agua</a></li>
-                      <li><a class="dropdown-item" href="../../rio-chichimene/diagnostico/calidad_hidrologica.html">Calidad fisicoquímica e hidrobiológica</a></li>
-                      <li><a class="dropdown-item" href="../../rio-chichimene/diagnostico/vertimientos.html">Vertimientos y cargas contaminantes</a></li>
-                      <li><a class="dropdown-item" href="../../rio-chichimene/diagnostico/oferta_hidrica.html">Oferta hídrica y análisis de riesgos</a></li>
-                      <li><a class="dropdown-item" href="../../rio-chichimene/diagnostico/demanda_hidrica.html">Demanda hídrica</a></li>
-                      <li><a class="dropdown-item" href="../../rio-chichimene/diagnostico/tenencia_tierra.html">Tenencia de tierra</a></li>           
-                    </ul>
+              <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle colorLetra" href="#">Prospectiva</a>
+                <ul class="dropdown-menu fondoBlanco miBody">
+                  <a href="../prospectiva/prospectiva.html">
+                    <h6 class="dropdown-header colorLetra miH6">Prospectiva</h6>
+                  </a>
+                  <li><a class="dropdown-item colorLetra" href="../prospectiva/demanda_proyectada.html">Demanda
+                      proyectada</a></li>
+                  <li><a class="dropdown-item colorLetra" href="../prospectiva/usos_potenciales.html">Usos potenciales
+                      por
+                      tramos</a></li>
+                  <li><a class="dropdown-item colorLetra" href="../prospectiva/escenarios_modelizacion.html">Escenarios
+                      de
+                      modelización</a></li>
+                </ul>
+              </li>
+              <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle colorLetra" href="#">Formulación</a>
+                <ul class="dropdown-menu fondoBlanco miBody">
+                  <a href="../formulacion/formulacion.html">
+                    <h6 class="dropdown-header colorLetra miH6">Formulación</h6>
+                  </a>
+                  <li><a class="dropdown-item colorLetra" href="../formulacion/inventario_usuarios.html">Inventario de
+                      usuarios</a>
                   </li>
-                  <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Prospectiva</a>
-                    <ul class="dropdown-menu">
-                      <a href="../../rio-chichimene/prospectiva/prospectiva.html"><h6 class="dropdown-header">Prospectiva</h6></a>
-                      <li><a class="dropdown-item" href="../../rio-chichimene/prospectiva/demanda_proyectada.html">Demanda proyectada</a></li>
-                      <li><a class="dropdown-item" href="../../rio-chichimene/prospectiva/usos_potenciales.html">Usos potenciales por tramos</a></li>
-                      <li><a class="dropdown-item" href="../../rio-chichimene/prospectiva/escenarios_modelizacion.html">Escenarios de modelización</a></li>                  
-                    </ul>
+                  <li><a class="dropdown-item colorLetra" href="../formulacion/objetivos_calidad.html">Objetivos de
+                      calidad</a>
                   </li>
-                  <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Formulación</a>
-                    <ul class="dropdown-menu">
-                      <a href="../../rio-chichimene/formulacion/formulacion.html"><h6 class="dropdown-header">Formulación</h6></a>
-                      <li><a class="dropdown-item" href="../../rio-chichimene/formulacion/clasificacion_aguas.html">Clasificación aguas</a></li>
-                      <li><a class="dropdown-item" href="../../rio-chichimene/formulacion/inventario_usuarios.html">Inventario de usuarios</a></li>
-                      <li><a class="dropdown-item" href="../../rio-chichimene/formulacion/objetivos_calidad.html">Objetivos de calidad</a></li>
-                      <li><a class="dropdown-item" href="../../rio-chichimene/formulacion/zonas_uso.html">Zonas/condiciones de uso</a></li> 
-                      <li><a class="dropdown-item" href="../../rio-chichimene/formulacion/metas_quinquenales.html">Metas quinquenales</a></li> 
-                      <li><a class="dropdown-item" href="../../rio-chichimene/formulacion/estructuracion_porh.html">Estructuración del PORH</a></li>                
-                    </ul>
-                  </li>                
-                  <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Líneas estratégicas</a>
-                    <ul class="dropdown-menu">
-                      <a href="../../rio-chichimene/lineas-estrategicas/lineas_estrategicas.html"><h6 class="dropdown-header">Líneas Estratégicas</h6></a>
-                      <li><a class="dropdown-item" href="../../rio-chichimene/lineas-estrategicas/instrumentacion.html">Instrumentación de la corriente principal</a></li>
-                      <li><a class="dropdown-item" href="../../rio-chichimene/lineas-estrategicas/divulgacion.html">Divulgación de riesgos</a></li>     
-                    </ul>
+                  <li><a class="dropdown-item colorLetra" href="../formulacion/zonas_uso.html">Zonas/condiciones de
+                      uso</a></li>
+                  <li><a class="dropdown-item colorLetra" href="../formulacion/metas_quinquenales.html">Metas
+                      quinquenales</a></li>
+                </ul>
+              </li>
+              <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle colorLetra" href="#">Líneas
+                  estratégicas</a>
+                <ul class="dropdown-menu fondoBlanco miBody">
+                  <a href="../lineas-estrategicas/lineas_estrategicas.html">
+                    <h6 class="dropdown-header colorLetra miH6">Líneas Estratégicas</h6>
+                  </a>
+                  <li><a class="dropdown-item colorLetra"
+                      href="../lineas-estrategicas/instrumentacion.html">Instrumentación de la
+                      corriente principal</a></li>
+                  <li><a class="dropdown-item colorLetra" href="../lineas-estrategicas/divulgacion.html">Divulgación de
+                      riesgos</a>
                   </li>
                 </ul>
-              </li>          
-              <li class="nav-item">
-                <a class="nav-link" href="../../contacto.html">Contacto</a>
               </li>
             </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
-                <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Buscar</button>
-              </form>
-          </div>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle MenuFooter" href="http://example.com" id="navbarDropdownMenuLink"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Río Chichimene
+            </a>
+            <ul class="dropdown-menu fondoBlanco miBody" aria-labelledby="navbarDropdownMenuLink">
+              <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle colorLetra" href="#">Diagnóstico</a>
+                <ul class="dropdown-menu fondoBlanco miBody">
+                  <a href="../../rio-chichimene/diagnostico/diagnostico.html">
+                    <h6 class="dropdown-header colorLetra miH6">Diagnóstico</h6>
+                  </a>
+                  <li><a class="dropdown-item colorLetra"
+                      href="../../rio-chichimene/diagnostico/usuarios_agua.html">Usuarios del
+                      agua</a></li>
+                  <li><a class="dropdown-item colorLetra"
+                      href="../../rio-chichimene/diagnostico/calidad_hidrologica.html">Calidad
+                      fisicoquímica e hidrobiológica</a></li>
+                  <li><a class="dropdown-item colorLetra"
+                      href="../../rio-chichimene/diagnostico/vertimientos.html">Vertimientos y
+                      cargas contaminantes</a></li>
+                  <li><a class="dropdown-item colorLetra"
+                      href="../../rio-chichimene/diagnostico/oferta_hidrica.html">Oferta
+                      hídrica y análisis de riesgos</a></li>
+                  <li><a class="dropdown-item colorLetra"
+                      href="../../rio-chichimene/diagnostico/demanda_hidrica.html">Demanda
+                      hídrica</a></li>
+                  <li><a class="dropdown-item colorLetra"
+                      href="../../rio-chichimene/diagnostico/tenencia_tierra.html">Tenencia de
+                      tierra</a></li>
+                </ul>
+              </li>
+              <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle colorLetra" href="#">Prospectiva</a>
+                <ul class="dropdown-menu fondoBlanco miBody">
+                  <a href="../../rio-chichimene/prospectiva/prospectiva.html">
+                    <h6 class="dropdown-header colorLetra miH6">Prospectiva</h6>
+                  </a>
+                  <li><a class="dropdown-item colorLetra"
+                      href="../../rio-chichimene/prospectiva/demanda_proyectada.html">Demanda
+                      proyectada</a></li>
+                  <li><a class="dropdown-item colorLetra"
+                      href="../../rio-chichimene/prospectiva/usos_potenciales.html">Usos
+                      potenciales por tramos</a></li>
+                  <li><a class="dropdown-item colorLetra"
+                      href="../../rio-chichimene/prospectiva/escenarios_modelizacion.html">Escenarios de
+                      modelización</a></li>
+                </ul>
+              </li>
+              <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle colorLetra" href="#">Formulación</a>
+                <ul class="dropdown-menu fondoBlanco miBody">
+                  <a href="../../rio-chichimene/formulacion/formulacion.html">
+                    <h6 class="dropdown-header colorLetra miH6">Formulación</h6>
+                  </a>
+                  <li><a class="dropdown-item colorLetra"
+                      href="../../rio-chichimene/formulacion/clasificacion_aguas.html">Clasificación aguas</a></li>
+                  <li><a class="dropdown-item colorLetra"
+                      href="../../rio-chichimene/formulacion/inventario_usuarios.html">Inventario de usuarios</a></li>
+                  <li><a class="dropdown-item colorLetra"
+                      href="../../rio-chichimene/formulacion/objetivos_calidad.html">Objetivos
+                      de calidad</a></li>
+                  <li><a class="dropdown-item colorLetra"
+                      href="../../rio-chichimene/formulacion/zonas_uso.html">Zonas/condiciones
+                      de uso</a></li>
+                  <li><a class="dropdown-item colorLetra"
+                      href="../../rio-chichimene/formulacion/metas_quinquenales.html">Metas
+                      quinquenales</a></li>
+                  <li><a class="dropdown-item colorLetra"
+                      href="../../rio-chichimene/formulacion/estructuracion_porh.html">Estructuración del PORH</a></li>
+                </ul>
+              </li>
+              <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle colorLetra" href="#">Líneas
+                  estratégicas</a>
+                <ul class="dropdown-menu fondoBlanco miBody">
+                  <a href="../../rio-chichimene/lineas-estrategicas/lineas_estrategicas.html">
+                    <h6 class="dropdown-header colorLetra miH6">Líneas Estratégicas</h6>
+                  </a>
+                  <li><a class="dropdown-item colorLetra"
+                      href="../../rio-chichimene/lineas-estrategicas/instrumentacion.html">Instrumentación de la
+                      corriente principal</a></li>
+                  <li><a class="dropdown-item colorLetra"
+                      href="../../rio-chichimene/lineas-estrategicas/divulgacion.html">Divulgación de riesgos</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link MenuFooter" href="../../contacto.html">Contacto</a>
+          </li>
+        </ul>
+            <input type="search" id="buscador" placeholder="Buscar aqui">
+            <div class="content-search">
+              <div class="content-table">
+                <table id="table">
+                <thead>
+                    <tr>
+                        <td></td>
+                    </tr>
+                </thead>
+    
+                <tbody>
+                  <tr>
+                    <td><a class="colorLetra" href="../diagnostico/diagnostico.html" target="_blank">Río
+                        Acaciitas, Diagnóstico</a></td>
+                  </tr>
+  
+                  <tr>
+                    <td><a class="colorLetra" href="../diagnostico/usuarios_agua.html" target="_blank">Río
+                        Acaciitas, Diagnóstico: Usuarios del agua</a></td>
+                  </tr>
+  
+                  <tr>
+                    <td><a class="colorLetra" href="../diagnostico/calidad_hidrologica.html"
+                        target="_blank">Río Acaciitas, Diagnóstico: Calidad fisicoquímica e hidrobiológica</a></td>
+                  </tr>
+  
+                  <tr>
+                    <td><a class="colorLetra" href="../diagnostico/vertimientos.html" target="_blank">Río
+                        Acaciitas, Diagnóstico: Vertimientos y aguas contaminantes</a></td>
+                  </tr>
+  
+                  <tr>
+                    <td><a class="colorLetra" href="../diagnostico/oferta_hidrica.html" target="_blank">Río
+                        Acaciitas, Diagnóstico: Oferta hídrica y análisis de riesgo</a></td>
+                  </tr>
+  
+                  <tr>
+                    <td><a class="colorLetra" href="../diagnostico/demanda_hidrica.html" target="_blank">Río
+                        Acaciitas, Diagnóstico: Demanda hídrica</a></td>
+                  </tr>
+  
+                  <tr>
+                    <td><a class="colorLetra" href="../diagnostico/tenencia_tierra.html" target="_blank">Río
+                        Acaciitas, Diagnóstico: Tenencia de tierra</a></td>
+                  </tr>
+  
+                  <tr>
+                    <td><a class="colorLetra" href="../prospectiva/prospectiva.html" target="_blank">Río
+                        Acaciitas, Prospectiva</a></td>
+                  </tr>
+                  <tr>
+                    <td><a class="colorLetra" href="../prospectiva/demanda_proyectada.html"
+                        target="_blank">Río Acaciitas, Prospectiva: Demanda proyectada</a></td>
+                  </tr>
+                  <tr>
+                    <td><a class="colorLetra" href="../prospectiva/usos_potenciales.html" target="_blank">Río
+                        Acaciitas, Prospectiva: Usos potenciales por tramos</a></td>
+                  </tr>
+                  <tr>
+                    <td><a class="colorLetra" href="../prospectiva/escenarios_modelizacion.html"
+                        target="_blank">Río Acaciitas, Prospectiva: escenarios modelizacion</a></td>
+                  </tr>
+                  <tr>
+                    <td><a class="colorLetra" href="../formulacion/formulacion.html" target="_blank">Río
+                        Acaciitas, Formulación</a></td>
+                  </tr>
+                  <tr>
+                    <td><a class="colorLetra" href="../formulacion/inventario_usuarios.html"
+                        target="_blank">Río Acaciitas, Formulación: Inventario de usuarios</a></td>
+                  </tr>
+                  <tr>
+                    <td><a class="colorLetra" href="../formulacion/objetivos_calidad.html"
+                        target="_blank">Río Acaciitas, Formulación: Objetivos de calidad</a></td>
+                  </tr>
+                  <tr>
+                    <td><a class="colorLetra" href="../formulacion/zonas_uso.html" target="_blank">Río
+                        Acaciitas, Formulación: zonas y condiciones de uso</a></td>
+                  </tr>
+                  <tr>
+                    <td><a class="colorLetra" href="../formulacion/metas_quinquenales.html"
+                        target="_blank">Río Acaciitas, Formulación: Meta quinquenales</a></td>
+                  </tr>
+                  <tr>
+                    <td><a class="colorLetra" href="../lineas-estrategicas/lineas_estrategicas.html"
+                        target="_blank">Río Acaciitas, Líneas estratégicas</a></td>
+                  </tr>
+                  <tr>
+                    <td><a class="colorLetra" href="../lineas-estrategicas/instrumentacion.html"
+                        target="_blank">Río Acaciitas, Líneas estratégicas: Instrumentación de la corriente principal</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><a class="colorLetra" href="../lineas-estrategicas/divulgacion.html"
+                        target="_blank">Río Acaciitas, Líneas estratégicas: Divulgación de riesgos</a></td>
+                  </tr>
+                  <tr>
+                    <td><a class="colorLetra" href="../../rio-chichimene/diagnostico/diagnostico.html" target="_blank">Río
+                        Chichimene, Diagnóstico</a></td>
+                  </tr>
+                  <tr>
+                    <td><a class="colorLetra" href="../../rio-chichimene/diagnostico/usuarios_agua.html" target="_blank">Río
+                        Chichimene, Diagnóstico: Usuarios del agua</a></td>
+                  </tr>
+                  <tr>
+                    <td><a class="colorLetra" href="../../rio-chichimene/diagnostico/calidad_hidrologica.html"
+                        target="_blank">Río Chichimene, Diagnóstico: Calidad fisicoquímica e hidrobiológica</a></td>
+                  </tr>
+                  <tr>
+                    <td><a class="colorLetra" href="../../rio-chichimene/diagnostico/vertimientos.html" target="_blank">Río
+                        Chichimene, Diagnóstico: Vertimientos y cargas contaminantes</a></td>
+                  </tr>
+                  <tr>
+                    <td><a class="colorLetra" href="../../rio-chichimene/diagnostico/oferta_hidrica.html" target="_blank">Río
+                        Chichimene, Diagnóstico: Oferta hídrica y ánalisis de riesgos</a></td>
+                  </tr>
+                  <tr>
+                    <td><a class="colorLetra" href="../../rio-chichimene/diagnostico/demanda_hidrica.html" target="_blank">Río
+                        Chichimene, Diagnóstico: Demanda hídrica</a></td>
+                  </tr>
+                  <tr>
+                    <td><a class="colorLetra" href="../../rio-chichimene/diagnostico/tenencia_tierra.html" target="_blank">Río
+                        Chichimene, Diagnóstico: Tenencia de tierra</a></td>
+                  </tr>
+                  <tr>
+                    <td><a class="colorLetra" href="../../rio-chichimene/prospectiva/prospectiva.html" target="_blank">Río
+                        Chichimene, Prospectiva</a></td>
+                  </tr>
+                  <tr>
+                    <td><a class="colorLetra" href="../../rio-chichimene/prospectiva/demanda_proyectada.html"
+                        target="_blank">Río Chichimene, Prospectiva: Demanda proyectada</a></td>
+                  </tr>
+                  <tr>
+                    <td><a class="colorLetra" href="../../rio-chichimene/prospectiva/usos_potenciales.html"
+                        target="_blank">Río Chichimene, Prospectiva: Usos potenciales por tramos</a></td>
+                  </tr>
+                  <tr>
+                    <td><a class="colorLetra" href="../../rio-chichimene/prospectiva/escenarios_modelizacion.html"
+                        target="_blank">Río Chichimene, Prospectiva: Escenarios de modelización</a></td>
+                  </tr>
+                  <tr>
+                    <td><a class="colorLetra" href="../../rio-chichimene/formulacion/formulacion.html" target="_blank">Río
+                        Chichimene, Formulación</a></td>
+                  </tr>
+                  <tr>
+                    <td><a class="colorLetra" href="../../rio-chichimene/formulacion/clasificacion_aguas.html"
+                        target="_blank">Río Chichimene, Formulación: Clasificación del agua</a></td>
+                  </tr>
+                  <tr>
+                    <td><a class="colorLetra" href="../../rio-chichimene/formulacion/inventario_usuarios.html"
+                        target="_blank">Río Chichimene, Formulación: Inventario de usuarios</a></td>
+                  </tr>
+                  <tr>
+                    <td><a class="colorLetra" href="../../rio-chichimene/formulacion/objetivos_calidad.html"
+                        target="_blank">Río Chichimene, Formulación: Objetivos de calidad</a></td>
+                  </tr>
+                  <tr>
+                    <td><a class="colorLetra" href="../../rio-chichimene/formulacion/zonas_uso.html" target="_blank">Río
+                        Chichimene, Formulación: Zona/Condiciones de Usos</a></td>
+                  </tr>
+                  <tr>
+                    <td><a class="colorLetra" href="../../rio-chichimene/formulacion/metas_quinquenales.html"
+                        target="_blank">Río Chichimene, Formulación: Metas quinquenales</a></td>
+                  </tr>
+                  <tr>
+                    <td><a class="colorLetra" href="../../rio-chichimene/formulacion/estructuracion_porh.html"
+                        target="_blank">Río Chichimene, Formulación: Estructuración del PORH</a></td>
+                  </tr>
+                  <tr>
+                    <td><a class="colorLetra" href="../../rio-chichimene/lineas-estrategicas/lineas_estrategicas.html"
+                        target="_blank">Río Chichimene, Líneas estratégicas</a></td>
+                  </tr>
+                  <tr>
+                    <td><a class="colorLetra" href="../../rio-chichimene/lineas-estrategicas/instrumentacion.html"
+                        target="_blank">Río Chichimene, Líneas estratégicas: Instrumentación de la corriente principal</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><a class="colorLetra" href="../../rio-chichimene/lineas-estrategicas/divulgacion.html"
+                        target="_blank">Río Chichimene, Líneas estratégicas: Divulgación de riesgos</a></td>
+                  </tr>
+                </tbody>
+                </table>
+              </div>
+    
+          
+          
+           </div>
       </div>
+    </div>
   </nav>
 
   <!-- Carousel -->
   <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
-      <div class="carousel-inner">
-          <div class="carousel-item active">
-          <img src="../../img/Banners PORH-01.png" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-          <img src="../../img/Banners PORH-02.png" class="d-block w-100" alt="...">
-          </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="../../img/Banners PORH-01.png" class="d-block w-100 contraste" alt="...">
       </div>
-      <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-      </a>
+      <div class="carousel-item">
+        <img src="../../img/Banners PORH-02.png" class="d-block w-100 contraste" alt="...">
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
   </div>
   <!-- Page Content -->
-  <div class="container mt-3">
-        <nav aria-label="breadcrumb">
-            <ol class="breadcrumb"  style="background-color: #5745a1">
-                <li class="breadcrumb-item"><a href="../../index.html" style="color: #fff">Inicio</a></li>
-                <li class="breadcrumb-item"><a href="../rio_acaciitas.html" style="color: #fff">Río Acaciitas</a></li>
-                <li class="breadcrumb-item" style="color: rgb(192, 192, 192)" aria-current="page">Usuarios del agua</li>
-            </ol>
-        </nav>
-        <div class="row">
-            <div class="col-12">
-                <h1>USUARIOS DEL AGUA</h1>                
-                <hr class="my-3">
-                <h3 style="color: #e76f2b">Registro de usuarios</h3>
-                <p>El inventario de usuarios permite obtener la mayor cantidad de información posible relacionada a usos de agua y vertimientos, para así lograr la caracterización del área de estudio consignando la información discriminada en las zonas donde se encuentra la mayor afectación e impacto del recurso hídrico.</p>
-                <p>Para definir los tramos del río Acaciítas se consideraron los usos establecidos en el esquema de ordenamiento territorial del municipio de Acacías , los resultados obtenidos en la zonificación ambiental realizada por Gestión Ambiental y Desarrollo U.T. y los usos actuales identificados para esta fuente hídrica donde se definió: que en la parte alta de este cuerpo hídrico se ubican dos bocatomas del acueducto alto Acaciítas y tres piscícolas, y en la parte media del río Acaciítas se ubican los vertimientos del área urbana de Acacias.</p>
+  <div class="container mt-3 fondoBlanco">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb mapaNavFondo" style="background-color: #5745a1">
+        <li class="breadcrumb-item"><a class="mapaNavLetra" href="../../index.html" style="color: #fff">Inicio</a></li>
+        <li class="breadcrumb-item"><a class="mapaNavLetra" href="../rio_acaciitas.html" style="color: #fff">Río
+            Acaciitas</a></li>
+        <li class="breadcrumb-item mapaNavLetra" style="color: rgb(192, 192, 192)" aria-current="page">Usuarios del agua
+        </li>
+      </ol>
+    </nav>
+    <div class="row">
+      <div class="col-12">
+        <h1 class="colorLetra miH1">USUARIOS DEL AGUA</h1>
+        <hr class="my-3">
+        <h3 class="colorTitulos miH3" style="color: #e76f2b">Registro de usuarios</h3>
+        <p class="colorLetra">El inventario de usuarios permite obtener la mayor cantidad de información posible
+          relacionada a usos de agua
+          y vertimientos, para así lograr la caracterización del área de estudio consignando la información discriminada
+          en las zonas donde se encuentra la mayor afectación e impacto del recurso hídrico.</p>
+        <p class="colorLetra">Para definir los tramos del río Acaciítas se consideraron los usos establecidos en el
+          esquema de ordenamiento
+          territorial del municipio de Acacías , los resultados obtenidos en la zonificación ambiental realizada por
+          Gestión Ambiental y Desarrollo U.T. y los usos actuales identificados para esta fuente hídrica donde se
+          definió: que en la parte alta de este cuerpo hídrico se ubican dos bocatomas del acueducto alto Acaciítas y
+          tres piscícolas, y en la parte media del río Acaciítas se ubican los vertimientos del área urbana de Acacias.
+        </p>
 
-                <div class="table-responsive">
-                    <table class="table table-striped table-hover text-center">
-                      <thead>
-                        <tr class="table-dark text-white">
-                          <th scope="col">Zona del rio Acaciítas</th>
-                          <th scope="col">Actividad</th>
-                          <th scope="col">Uso de la corriente</th>
-                          <th scope="col">Zona</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <th scope="row">Zona Alta</th>
-                          <td>Acueductos y Piscícola</td>
-                          <td>Consumo humano y domestico</td>
-                          <td>Se ubican entre las coordenadas: (933312N y 1029897E) hasta (933883N y 1031769E)</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Zona Media y baja</th>
-                          <td>Vertimientos</td>
-                          <td>Estético</td>
-                          <td>Se ubica en las coordenadas: (1036313E-932747N)</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                </div>
-                
-                <div class="card mb-3 shadow">
-                  <img class="card-img-top" src="http://placehold.it/800x250" alt="Card image cap">
-                  <div class="card-body">
-                    <h5 class="card-title">Foto 1. Bocatoma alto Acaciítas</h5>
-                    <!-- <p class="card-text"></p> -->
-                    <p class="card-text"><small class="text-muted">Fuente: Gestión Ambiental y Desarrollo U.T 2011</small></p>
-                  </div>
-                </div>
-                <hr class="my-3">
-                <h3 class="mt-2" style="color: #e76f2b">Captaciones</h3>
-                <p>El río Acaciítas cuenta con cinco (5) captaciones, de los cuales dos (2) son captaciones para usos doméstico y consumo humano, y  tres (3) son captaciones para usos pecuario (porcicola y piscícola).</p>
-                <h4 class="my-3 text-center" style="color: #c26027">Usuarios con captaciones de agua para uso humano, domestico y pecuario sobre el río Acaciítas</h4>
-                <div class="table-responsive">
-                  <table class="table table-striped table-hover text-center">
-                    <caption><i>Fuente: U.T Gestión Ambiental y Desarrollo</i></caption>
-                    <thead>
-                      <tr class="table-dark text-white">
-                        <th scope="col">Clasificación</th>
-                        <th scope="col">Estación</th>
-                        <th scope="col">Fuente Hídrica</th>
-                        <th scope="col">Descripción</th>
-                        <th scope="col">Coordenadas</th>
-                        <th scope="col">Caudal Concesionado (L/S)</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <th scope="row">Consumo humano y Domésticos</th>
-                        <td>C.A.B.2</td>
-                        <td>Río Acaciítas</td>
-                        <td>ACUEDUCTO ALTO ACACIÍTAS (ESPA)</td>
-                        <td>N 933312 E 1029897</td>
-                        <td>60</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">Consumo humano y Domésticos</th>
-                        <td>C.A.B.3</td>
-                        <td>Río Acaciítas</td>
-                        <td>ACUEDUCTO ALTO ACACIÍTAS (ESPA)</td>
-                        <td>N 933883 E 1031769</td>
-                        <td>40</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">Pecuario</th>
-                        <td>C.P.1</td>
-                        <td>Río Acaciítas</td>
-                        <td>Captación piscícola y porcicola Vila Mariana</td>
-                        <td>N 933304 E 1029961</td>
-                        <td>4.5</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">Pecuario</th>
-                        <td>C.P.2</td>
-                        <td>Río Acaciítas</td>
-                        <td>Captación piscícola el Cedral</td>
-                        <td>N 933462 E 1029933</td>
-                        <td>4.5</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">Pecuario</th>
-                        <td>C.P.3</td>
-                        <td>Río Acaciítas</td>
-                        <td>Captación piscícola el Claret</td>
-                        <td>N 933630 E 1031569</td>
-                        <td>4.5</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-                <hr class="my-3">
-                <h3 class="mt-2" style="color: #e76f2b">Captaciones para uso pecuario</h3>
-                <p>Para uso pecuario existen 3 captaciones sobre el río Acaciítas:</p>
-                <p class="ml-3">
-                    - Captación Piscícola Villa Marina: mediante una manguera de 3? en las coordenadas N: 933.304 E: 1.029.961 <br>
-                    - Captación Piscícola El Cedral: se capta en una tubería de ½ pulgada, en las coordenadas N: 933.462 E: 1.029.933 <br>
-                    - Captación Piscícola El Claret: mediante una tubería de polietileno de ½ pulgada en las coordenadas N: 933.630 E: 1.031.569.
-                </p>
-                <h3 class="mt-2" style="color: #e76f2b">Captaciones de agua subterránea</h3>
-                <p>Para la subcuenca del río Acaciitas se presentan captaciones de agua subterránea mediante pozo, aljibe o manantial en la cabecera municipal y la vereda Alto de Acaciítas, el uso que se le da a estas captaciones es doméstico, consumo humano, industrial, agrícola, piscicultura.</p>
-                <p>El acueducto ESPA hace captación de agua subterránea para abastecer el acueducto, en el área urbana de Acacías se presenta incumplimiento repetitivo en los siguientes parámetros: color y Ph y en dos ocasiones para coliformes fecales.</p>
-                <div class="card mb-3 shadow">
-                    <img class="card-img-top" src="http://placehold.it/800x250" alt="Card image cap">
-                    <div class="card-body">
-                      <h5 class="card-title">Ubicación de las captaciones de agua subterránea</h5>
-                      <!-- <p class="card-text"></p> -->
-                      <!-- <p class="card-text"><small class="text-muted">Fuente: Gestión Ambiental y Desarrollo U.T 2011</small></p> -->
-                    </div>
-                </div>
-                <hr class="mt-4">
-                <h4 class="mt-4 text-center" style="color: #c26027">Captaciones de agua subterránea georreferenciadas en la cuenca del río Acacías</h4>
-                <p>En construcción...</p>
-              
-            </div>
-              
+        <div class="table-responsive">
+          <table class="table table-striped table-hover text-center">
+            <thead>
+              <tr class="table-dark colorLetra">
+                <th class="" scope="col">Zona del rio Acaciítas</th>
+                <th class="" scope="col">Actividad</th>
+                <th class="" scope="col">Uso de la corriente</th>
+                <th class="" scope="col">Zona</th>
+              </tr>
+            </thead>
+            <tbody class="colorLetra">
+              <tr>
+                <th class="" scope="row">Zona Alta</th>
+                <td class="">Acueductos y Piscícola</td>
+                <td class="">Consumo humano y domestico</td>
+                <td class="">Se ubican entre las coordenadas: (933312N y 1029897E) hasta (933883N y 1031769E)</td>
+              </tr>
+              <tr>
+                <th class="" scope="row">Zona Media y baja</th>
+                <td class="">Vertimientos</td>
+                <td class="">Estético</td>
+                <td class="">Se ubica en las coordenadas: (1036313E-932747N)</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
-        
+
+        <div class="card mb-3 shadow fondoBlanco">
+          <img class="card-img-top" src="http://placehold.it/800x250" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title colorLetra miH5">Foto 1. Bocatoma alto Acaciítas</h5>
+            <!-- <p class="card-text"></p> -->
+            <p class="card-text"><small class="colorLetra">Fuente: Gestión Ambiental y Desarrollo U.T 2011</small></p>
+          </div>
+        </div>
+        <hr class="my-3">
+        <h3 class="mt-2 colorTitulos miH3" style="color: #e76f2b">Captaciones</h3>
+        <p class="colorLetra">El río Acaciítas cuenta con cinco (5) captaciones, de los cuales dos (2) son captaciones
+          para usos doméstico
+          y consumo humano, y tres (3) son captaciones para usos pecuario (porcicola y piscícola).</p>
+        <h4 class="my-3 text-center colorTitulos colorLetra miH4" style="color: #e76f2b">Usuarios con captaciones de agua
+          para uso humano, domestico y pecuario sobre el río Acaciítas</h4>
+        <div class="table-responsive">
+          <table class="table table-striped table-hover text-center">
+            <caption><i class="colorLetra">Fuente: U.T Gestión Ambiental y Desarrollo</i></caption>
+            <thead>
+              <tr class="table-dark colorLetra ">
+                <th class="" scope="col">Clasificación</th>
+                <th class="" scope="col">Estación</th>
+                <th class="" scope="col">Fuente Hídrica</th>
+                <th class="" scope="col">Descripción</th>
+                <th class="" scope="col">Coordenadas</th>
+                <th class="" scope="col">Caudal Concesionado (L/S)</th>
+              </tr>
+            </thead>
+            <tbody class="colorLetra">
+              <tr>
+                <th class="" scope="row">Consumo humano y Domésticos</th>
+                <td class="">C.A.B.2</td>
+                <td class="">Río Acaciítas</td>
+                <td class="">ACUEDUCTO ALTO ACACIÍTAS (ESPA)</td>
+                <td class="">N 933312 E 1029897</td>
+                <td class="">60</td>
+              </tr>
+              <tr>
+                <th class="" scope="row">Consumo humano y Domésticos</th>
+                <td class="">C.A.B.3</td>
+                <td class="">Río Acaciítas</td>
+                <td class="">ACUEDUCTO ALTO ACACIÍTAS (ESPA)</td>
+                <td class="">N 933883 E 1031769</td>
+                <td class="">40</td>
+              </tr>
+              <tr>
+                <th class="" scope="row">Pecuario</th>
+                <td class="">C.P.1</td>
+                <td class="">Río Acaciítas</td>
+                <td class="">Captación piscícola y porcicola Vila Mariana</td>
+                <td class="">N 933304 E 1029961</td>
+                <td class="">4.5</td>
+              </tr>
+              <tr>
+                <th class="" scope="row">Pecuario</th>
+                <td class="">C.P.2</td>
+                <td class="">Río Acaciítas</td>
+                <td class="">Captación piscícola el Cedral</td>
+                <td class="">N 933462 E 1029933</td>
+                <td class="">4.5</td>
+              </tr>
+              <tr>
+                <th class="" scope="row">Pecuario</th>
+                <td class="">C.P.3</td>
+                <td class="">Río Acaciítas</td>
+                <td class="">Captación piscícola el Claret</td>
+                <td class="">N 933630 E 1031569</td>
+                <td class="">4.5</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <hr class="my-3">
+        <h3 class="mt-2 colorTitulos miH3" style="color: #e76f2b">Captaciones para uso pecuario</h3>
+        <p class="colorLetra">Para uso pecuario existen 3 captaciones sobre el río Acaciítas:</p>
+        <p class="ml-3 colorLetra">
+          - Captación Piscícola Villa Marina: mediante una manguera de 3? en las coordenadas N: 933.304 E: 1.029.961
+          <br>
+          - Captación Piscícola El Cedral: se capta en una tubería de ½ pulgada, en las coordenadas N: 933.462 E:
+          1.029.933 <br>
+          - Captación Piscícola El Claret: mediante una tubería de polietileno de ½ pulgada en las coordenadas N:
+          933.630 E: 1.031.569.
+        </p>
+        <h3 class="mt-2 colorTitulos miH3" style="color: #e76f2b">Captaciones de agua subterránea</h3>
+        <p class="colorLetra">Para la subcuenca del río Acaciitas se presentan captaciones de agua subterránea mediante
+          pozo, aljibe o
+          manantial en la cabecera municipal y la vereda Alto de Acaciítas, el uso que se le da a estas captaciones es
+          doméstico, consumo humano, industrial, agrícola, piscicultura.</p>
+        <p class="colorLetra">El acueducto ESPA hace captación de agua subterránea para abastecer el acueducto, en el
+          área urbana de
+          Acacías se presenta incumplimiento repetitivo en los siguientes parámetros: color y Ph y en dos ocasiones para
+          coliformes fecales.</p>
+        <div class="card mb-3 shadow fondoBlanco">
+          <img class="card-img-top" src="http://placehold.it/800x250" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title colorLetra miH5">Ubicación de las captaciones de agua subterránea</h5>
+            <!-- <p class="card-text"></p> -->
+            <!-- <p class="card-text"><small class="text-muted">Fuente: Gestión Ambiental y Desarrollo U.T 2011</small></p> -->
+          </div>
+        </div>
+        <hr class="mt-4">
+        <h4 class="mt-4 text-center colorTitulos miH4" style="color: #e76f2b">Captaciones de agua subterránea
+          georreferenciadas en la
+          cuenca del río Acacías</h4>
+        <p class="colorLetra">En construcción...</p>
+
+      </div>
+
+    </div>
+
 
   </div>
   <!-- /.container -->
 
   <!-- Footer -->
-  <footer class="py-5 mt-5">
-           
-
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-              <center>
-                <img src="../../img/logo_horizontal_gris.png" alt="" width="210" height="55">
-              </center>  
-              <p class="m-0 text-center text-white">Sede Principal Cra 35 No 25-57 Barrio San Benito Villavicencio - Meta (Colombia) PBX (8) 6730420</p>
-              <p class="m-0 text-center text-white">Línea Gratuita: 01 8000 117 177 - Correo electrónico: <a href="mailto:info@cormacarena.gov.co">info@cormacarena.gov.co</a> Notificaciones Judiciales: <a href="mailto:notificacionesjudiciales@cormacarena.gov.co">notificacionesjudiciales@cormacarena.gov.co</a></p>
-              <p class="m-0 text-center text-white">Horario de Atención Lunes a Viernes de 8:00 a.m. a 12:00 m. y 2:00 p.m. a 6:00 p.m.</p>
-              <p class="m-0 text-center text-white">Copyright © Gestión de Servicios de Información y Tecnología - Todos los derechos reservados para CORMACARENA</p>
-              <br>
-              <center>
-                <a href="https://www.sgs.co/es-es/certified-clients-and-products/certified-client-directory" target="_blank"><img src="../../img/logos_sgs_2.png" alt="" width="180" height="50"></a>
-              </center>
-          </div>
+  <footer class="py-5 mt-5 MenuFooter">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <center>
+            <img src="./img/logo_horizontal_gris.png" alt="" width="210" height="55" class="contraste">
+          </center>
+          <p class="m-0 text-center ">Sede Principal Cra 35 No 25-57 Barrio San Benito Villavicencio - Meta
+            (Colombia) PBX (8) 6730420</p>
+          <p class="m-0 text-center ">Línea Gratuita: 01 8000 117 177 - Correo electrónico: <a
+              href="mailto:info@cormacarena.gov.co">info@cormacarena.gov.co</a> Notificaciones Judiciales: <a
+              href="mailto:notificacionesjudiciales@cormacarena.gov.co">notificacionesjudiciales@cormacarena.gov.co</a>
+          </p>
+          <p class="m-0 text-center ">Horario de Atención Lunes a Viernes de 8:00 a.m. a 12:00 m. y 2:00 p.m.
+            a 6:00 p.m.</p>
+          <p class="m-0 text-center ">Copyright © Gestión de Servicios de Información y Tecnología - Todos los
+            derechos reservados para CORMACARENA</p>
+          <br>
+          <center>
+            <a href="https://www.sgs.co/es-es/certified-clients-and-products/certified-client-directory"
+              target="_blank"><img src="./img/logos_sgs_2.png" alt="" width="180" height="50" class="contraste"></a>
+          </center>
         </div>
       </div>
-        
-      <!-- /.container -->
-    
-  </footer> 
+    </div>
 
+    <!-- /.container -->
+
+  </footer>
+
+  <!-- accesibilidad -->
+  <div class=" row panel-flotante">
+    <div class="contenedor-accesibilidad">
+      <a href="#" class="altoContraste">
+        <img src="../../img/accesibilidad/contrast.png" width="35" height="35" alt="Cambiar contraste" title="">
+      </a>
+    </div>
+    <div class="contenedor-accesibilidad">
+      <a href="#" class="disminuirFont">
+        <img src="../../img/accesibilidad/puntaje-menor.png" width="35" height="35" alt="Reducir tamaÃ±o del texto"
+          title="">
+      </a>
+    </div>
+    <div class="contenedor-accesibilidad">
+      <a href="#" class="resetearFont">
+        <img src="../../img/accesibilidad/puntaje-r.png" width="35" height="35" alt="Reducir tamaÃ±o del texto"
+          title="">
+      </a>
+    </div>
+    <div class="contenedor-accesibilidad">
+      <a href="#" class="aumentarFont">
+        <img src="../../img/accesibilidad/puntaje-mayor.png" width="35" height="35" alt="Aumentar tamaÃ±o del texto"
+          title="">
+      </a>
+    </div>
+    <div class="contenedor-accesibilidad">
+      <a href="https://centroderelevo.gov.co" class="" target="_blank">
+        <img src="../../img/accesibilidad/relevo_0.png" width="35" height="35" alt="Ir al centro de relevo" title="">
+      </a>
+    </div>
+  </div>
+  <script src="../../js/accesibilidad.js" type="text/javascript"></script>
+
+  <script src="../../js/search.js"></script>
   <!-- Bootstrap core JavaScript -->
   <script src="../../vendor/jquery/jquery.min.js"></script>
   <script src="../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
