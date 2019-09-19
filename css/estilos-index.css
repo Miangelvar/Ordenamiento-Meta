@@ -50,6 +50,13 @@ nav  {
   color: white;
 
 }
+/* Titulos */
+h3.titulo-1{
+  color: #e76f2b
+}
+h4.titulo-2{
+  color: #c26027;
+}
 /* Footer */
 footer {
   background-color: #1f0b73;

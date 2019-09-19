@@ -1,0 +1,9 @@
+.scroll{
+    overflow: auto;
+    white-space: nowrap;
+}
+
+.table td, th{
+    text-align: center
+}
+
