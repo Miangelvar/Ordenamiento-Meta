@@ -1,0 +1,2415 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+  <meta charset="ISO-8859-1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>PORH Departamento del Meta | Río Chichimene - Demanda hídrica</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles -->
+  <link href="../../css/estilos-index.css" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="stylesheet" href="../../css/estilos.css">
+
+
+  <script src="../../js/jquery.js"></script>
+  <script src="../../js/jquery.dataTables.min.js"></script>
+
+</head>
+
+<body class="fondoBlanco miBody">
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-fixed-top fixed-top MenuFooter">
+    <div class="container">
+      <a class="navbar-brand MenuFooter" href="../../index.html">PORH</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="https://id.presidencia.gov.co/Paginas/presidencia.aspx"
+              style="width: 108px; height: 24px;">
+              <img class="img-fluid contraste" src="../../img/Logopresidencia.png" alt="Presidencia">
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://www.minambiente.gov.co" style="width: 108px; height: 24px;">
+              <img class="img-fluid contraste" src="../../img/Minambiente2.png" alt="Ministerio Ambiente">
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://www.cormacarena.gov.co" style="width: 108px; height: 24px;">
+              <img class="img-fluid contraste" src="../../img/logo_horizontal_gris.png" alt="Cormacarena">
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link MenuFooter" href="../../index.html">Inicio <span class="sr-only">(Página
+                actual)</span></a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle MenuFooter" href="http://example.com" id="navbarDropdownMenuLink"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Río Acaciitas
+            </a>
+            <ul class="dropdown-menu fondoBlanco miBody" aria-labelledby="navbarDropdownMenuLink">
+              <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle colorLetra" href="#">Diagnóstico</a>
+                <ul class="dropdown-menu fondoBlanco miBody">
+                  <a href="../diagnostico/diagnostico.html">
+                    <h6 class="dropdown-header colorLetra miH6">Diagnóstico</h6>
+                  </a>
+                  <li><a class="dropdown-item colorLetra" href="../diagnostico/usuarios_agua.html">Usuarios del agua</a>
+                  </li>
+                  <li><a class="dropdown-item colorLetra" href="../diagnostico/calidad_hidrologica.html">Calidad
+                      fisicoquímica e
+                      hidrobiológica</a></li>
+                  <li><a class="dropdown-item colorLetra" href="../diagnostico/vertimientos.html">Vertimientos y cargas
+                      contaminantes</a></li>
+                  <li><a class="dropdown-item colorLetra" href="../diagnostico/oferta_hidrica.html">Oferta hídrica y
+                      análisis de riesgos</a>
+                  </li>
+                  <li><a class="dropdown-item colorLetra" href="../diagnostico/demanda_hidrica.html">Demanda hídrica</a>
+                  </li>
+                  <li><a class="dropdown-item colorLetra" href="../diagnostico/tenencia_tierra.html">Tenencia de
+                      tierra</a></li>
+                </ul>
+              </li>
+              <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle colorLetra" href="#">Prospectiva</a>
+                <ul class="dropdown-menu fondoBlanco miBody">
+                  <a href="../prospectiva/prospectiva.html">
+                    <h6 class="dropdown-header colorLetra miH6">Prospectiva</h6>
+                  </a>
+                  <li><a class="dropdown-item colorLetra" href="../prospectiva/demanda_proyectada.html">Demanda
+                      proyectada</a></li>
+                  <li><a class="dropdown-item colorLetra" href="../prospectiva/usos_potenciales.html">Usos potenciales
+                      por
+                      tramos</a></li>
+                  <li><a class="dropdown-item colorLetra" href="../prospectiva/escenarios_modelizacion.html">Escenarios
+                      de
+                      modelización</a></li>
+                </ul>
+              </li>
+              <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle colorLetra" href="#">Formulación</a>
+                <ul class="dropdown-menu fondoBlanco miBody">
+                  <a href="../formulacion/formulacion.html">
+                    <h6 class="dropdown-header colorLetra miH6">Formulación</h6>
+                  </a>
+                  <li><a class="dropdown-item colorLetra" href="../formulacion/inventario_usuarios.html">Inventario de
+                      usuarios</a>
+                  </li>
+                  <li><a class="dropdown-item colorLetra" href="../formulacion/objetivos_calidad.html">Objetivos de
+                      calidad</a>
+                  </li>
+                  <li><a class="dropdown-item colorLetra" href="../formulacion/zonas_uso.html">Zonas/condiciones de
+                      uso</a></li>
+                  <li><a class="dropdown-item colorLetra" href="../formulacion/metas_quinquenales.html">Metas
+                      quinquenales</a></li>
+                </ul>
+              </li>
+              <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle colorLetra" href="#">Líneas
+                  estratégicas</a>
+                <ul class="dropdown-menu fondoBlanco miBody">
+                  <a href="../lineas-estrategicas/lineas_estrategicas.html">
+                    <h6 class="dropdown-header colorLetra miH6">Líneas Estratégicas</h6>
+                  </a>
+                  <li><a class="dropdown-item colorLetra"
+                      href="../lineas-estrategicas/instrumentacion.html">Instrumentación de la
+                      corriente principal</a></li>
+                  <li><a class="dropdown-item colorLetra" href="../lineas-estrategicas/divulgacion.html">Divulgación de
+                      riesgos</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown active">
+            <a class="nav-link dropdown-toggle MenuFooter" href="http://example.com" id="navbarDropdownMenuLink"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Río Chichimene
+            </a>
+            <ul class="dropdown-menu fondoBlanco miBody" aria-labelledby="navbarDropdownMenuLink">
+              <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle colorLetra" href="#">Diagnóstico</a>
+                <ul class="dropdown-menu fondoBlanco miBody">
+                  <a href="../../rio-chichimene/diagnostico/diagnostico.html">
+                    <h6 class="dropdown-header colorLetra miH6">Diagnóstico</h6>
+                  </a>
+                  <li><a class="dropdown-item colorLetra"
+                      href="../../rio-chichimene/diagnostico/usuarios_agua.html">Usuarios del
+                      agua</a></li>
+                  <li><a class="dropdown-item colorLetra"
+                      href="../../rio-chichimene/diagnostico/calidad_hidrologica.html">Calidad
+                      fisicoquímica e hidrobiológica</a></li>
+                  <li><a class="dropdown-item colorLetra"
+                      href="../../rio-chichimene/diagnostico/vertimientos.html">Vertimientos y
+                      cargas contaminantes</a></li>
+                  <li><a class="dropdown-item colorLetra"
+                      href="../../rio-chichimene/diagnostico/oferta_hidrica.html">Oferta
+                      hídrica y análisis de riesgos</a></li>
+                  <li><a class="dropdown-item colorLetra"
+                      href="../../rio-chichimene/diagnostico/demanda_hidrica.html">Demanda
+                      hídrica</a></li>
+                  <li><a class="dropdown-item colorLetra"
+                      href="../../rio-chichimene/diagnostico/tenencia_tierra.html">Tenencia de
+                      tierra</a></li>
+                </ul>
+              </li>
+              <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle colorLetra" href="#">Prospectiva</a>
+                <ul class="dropdown-menu fondoBlanco miBody">
+                  <a href="../../rio-chichimene/prospectiva/prospectiva.html">
+                    <h6 class="dropdown-header colorLetra miH6">Prospectiva</h6>
+                  </a>
+                  <li><a class="dropdown-item colorLetra"
+                      href="../../rio-chichimene/prospectiva/demanda_proyectada.html">Demanda
+                      proyectada</a></li>
+                  <li><a class="dropdown-item colorLetra"
+                      href="../../rio-chichimene/prospectiva/usos_potenciales.html">Usos
+                      potenciales por tramos</a></li>
+                  <li><a class="dropdown-item colorLetra"
+                      href="../../rio-chichimene/prospectiva/escenarios_modelizacion.html">Escenarios de
+                      modelización</a></li>
+                </ul>
+              </li>
+              <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle colorLetra" href="#">Formulación</a>
+                <ul class="dropdown-menu fondoBlanco miBody">
+                  <a href="../../rio-chichimene/formulacion/formulacion.html">
+                    <h6 class="dropdown-header colorLetra miH6">Formulación</h6>
+                  </a>
+                  <li><a class="dropdown-item colorLetra"
+                      href="../../rio-chichimene/formulacion/clasificacion_aguas.html">Clasificación aguas</a></li>
+                  <li><a class="dropdown-item colorLetra"
+                      href="../../rio-chichimene/formulacion/inventario_usuarios.html">Inventario de usuarios</a></li>
+                  <li><a class="dropdown-item colorLetra"
+                      href="../../rio-chichimene/formulacion/objetivos_calidad.html">Objetivos
+                      de calidad</a></li>
+                  <li><a class="dropdown-item colorLetra"
+                      href="../../rio-chichimene/formulacion/zonas_uso.html">Zonas/condiciones
+                      de uso</a></li>
+                  <li><a class="dropdown-item colorLetra"
+                      href="../../rio-chichimene/formulacion/metas_quinquenales.html">Metas
+                      quinquenales</a></li>
+                  <li><a class="dropdown-item colorLetra"
+                      href="../../rio-chichimene/formulacion/estructuracion_porh.html">Estructuración del PORH</a></li>
+                </ul>
+              </li>
+              <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle colorLetra" href="#">Líneas
+                  estratégicas</a>
+                <ul class="dropdown-menu fondoBlanco miBody">
+                  <a href="../../rio-chichimene/lineas-estrategicas/lineas_estrategicas.html">
+                    <h6 class="dropdown-header colorLetra miH6">Líneas Estratégicas</h6>
+                  </a>
+                  <li><a class="dropdown-item colorLetra"
+                      href="../../rio-chichimene/lineas-estrategicas/instrumentacion.html">Instrumentación de la
+                      corriente principal</a></li>
+                  <li><a class="dropdown-item colorLetra"
+                      href="../../rio-chichimene/lineas-estrategicas/divulgacion.html">Divulgación de riesgos</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link MenuFooter" href="../../contacto.html">Contacto</a>
+          </li>
+        </ul>
+        <input type="search" id="buscador" placeholder="Buscar aqui">
+        <div class="content-search">
+          <div class="content-table">
+            <table id="table">
+              <thead>
+                <tr>
+                  <td></td>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td><a class="colorLetra" href="./rio-acaciitas/diagnostico/diagnostico.html" target="_blank">Río
+                      Acaciitas, Diagnóstico</a></td>
+                </tr>
+
+                <tr>
+                  <td><a class="colorLetra" href="./rio-acaciitas/diagnostico/usuarios_agua.html" target="_blank">Río
+                      Acaciitas, Diagnóstico: Usuarios del agua</a></td>
+                </tr>
+
+                <tr>
+                  <td><a class="colorLetra" href="./rio-acaciitas/diagnostico/calidad_hidrologica.html"
+                      target="_blank">Río Acaciitas, Diagnóstico: Calidad fisicoquímica e hidrobiológica</a></td>
+                </tr>
+
+                <tr>
+                  <td><a class="colorLetra" href="./rio-acaciitas/diagnostico/vertimientos.html" target="_blank">Río
+                      Acaciitas, Diagnóstico: Vertimientos y aguas contaminantes</a></td>
+                </tr>
+
+                <tr>
+                  <td><a class="colorLetra" href="./rio-acaciitas/diagnostico/oferta_hidrica.html" target="_blank">Río
+                      Acaciitas, Diagnóstico: Oferta hídrica y análisis de riesgo</a></td>
+                </tr>
+
+                <tr>
+                  <td><a class="colorLetra" href="./rio-acaciitas/diagnostico/demanda_hidrica.html" target="_blank">Río
+                      Acaciitas, Diagnóstico: Demanda hídrica</a></td>
+                </tr>
+
+                <tr>
+                  <td><a class="colorLetra" href="./rio-acaciitas/diagnostico/tenencia_tierra.html" target="_blank">Río
+                      Acaciitas, Diagnóstico: Tenencia de tierra</a></td>
+                </tr>
+
+                <tr>
+                  <td><a class="colorLetra" href="./rio-acaciitas/prospectiva/prospectiva.html" target="_blank">Río
+                      Acaciitas, Prospectiva</a></td>
+                </tr>
+                <tr>
+                  <td><a class="colorLetra" href="./rio-acaciitas/prospectiva/demanda_proyectada.html"
+                      target="_blank">Río Acaciitas, Prospectiva: Demanda proyectada</a></td>
+                </tr>
+                <tr>
+                  <td><a class="colorLetra" href="./rio-acaciitas/prospectiva/usos_potenciales.html" target="_blank">Río
+                      Acaciitas, Prospectiva: Usos potenciales por tramos</a></td>
+                </tr>
+                <tr>
+                  <td><a class="colorLetra" href="./rio-acaciitas/prospectiva/escenarios_modelizacion.html"
+                      target="_blank">Río Acaciitas, Prospectiva: escenarios modelizacion</a></td>
+                </tr>
+                <tr>
+                  <td><a class="colorLetra" href="./rio-acaciitas/formulacion/formulacion.html" target="_blank">Río
+                      Acaciitas, Formulación</a></td>
+                </tr>
+                <tr>
+                  <td><a class="colorLetra" href="./rio-acaciitas/formulacion/inventario_usuarios.html"
+                      target="_blank">Río Acaciitas, Formulación: Inventario de usuarios</a></td>
+                </tr>
+                <tr>
+                  <td><a class="colorLetra" href="./rio-acaciitas/formulacion/objetivos_calidad.html"
+                      target="_blank">Río Acaciitas, Formulación: Objetivos de calidad</a></td>
+                </tr>
+                <tr>
+                  <td><a class="colorLetra" href="./rio-acaciitas/formulacion/zonas_uso.html" target="_blank">Río
+                      Acaciitas, Formulación: zonas y condiciones de uso</a></td>
+                </tr>
+                <tr>
+                  <td><a class="colorLetra" href="./rio-acaciitas/formulacion/metas_quinquenales.html"
+                      target="_blank">Río Acaciitas, Formulación: Meta quinquenales</a></td>
+                </tr>
+                <tr>
+                  <td><a class="colorLetra" href="./rio-acaciitas/lineas-estrategicas/lineas_estrategicas.html"
+                      target="_blank">Río Acaciitas, Líneas estratégicas</a></td>
+                </tr>
+                <tr>
+                  <td><a class="colorLetra" href="./rio-acaciitas/lineas-estrategicas/instrumentacion.html"
+                      target="_blank">Río Acaciitas, Líneas estratégicas: Instrumentación de la corriente principal</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td><a class="colorLetra" href="./rio-acaciitas/lineas-estrategicas/divulgacion.html"
+                      target="_blank">Río Acaciitas, Líneas estratégicas: Divulgación de riesgos</a></td>
+                </tr>
+                <tr>
+                  <td><a class="colorLetra" href="./rio-chichimene/diagnostico/diagnostico.html" target="_blank">Río
+                      Chichimene, Diagnóstico</a></td>
+                </tr>
+                <tr>
+                  <td><a class="colorLetra" href="./rio-chichimene/diagnostico/usuarios_agua.html" target="_blank">Río
+                      Chichimene, Diagnóstico: Usuarios del agua</a></td>
+                </tr>
+                <tr>
+                  <td><a class="colorLetra" href="./rio-chichimene/diagnostico/calidad_hidrologica.html"
+                      target="_blank">Río Chichimene, Diagnóstico: Calidad fisicoquímica e hidrobiológica</a></td>
+                </tr>
+                <tr>
+                  <td><a class="colorLetra" href="./rio-chichimene/diagnostico/vertimientos.html" target="_blank">Río
+                      Chichimene, Diagnóstico: Vertimientos y cargas contaminantes</a></td>
+                </tr>
+                <tr>
+                  <td><a class="colorLetra" href="./rio-chichimene/diagnostico/oferta_hidrica.html" target="_blank">Río
+                      Chichimene, Diagnóstico: Oferta hídrica y ánalisis de riesgos</a></td>
+                </tr>
+                <tr>
+                  <td><a class="colorLetra" href="./rio-chichimene/diagnostico/demanda_hidrica.html" target="_blank">Río
+                      Chichimene, Diagnóstico: Demanda hídrica</a></td>
+                </tr>
+                <tr>
+                  <td><a class="colorLetra" href="./rio-chichimene/diagnostico/tenencia_tierra.html" target="_blank">Río
+                      Chichimene, Diagnóstico: Tenencia de tierra</a></td>
+                </tr>
+                <tr>
+                  <td><a class="colorLetra" href="./rio-chichimene/prospectiva/prospectiva.html" target="_blank">Río
+                      Chichimene, Prospectiva</a></td>
+                </tr>
+                <tr>
+                  <td><a class="colorLetra" href="./rio-chichimene/prospectiva/demanda_proyectada.html"
+                      target="_blank">Río Chichimene, Prospectiva: Demanda proyectada</a></td>
+                </tr>
+                <tr>
+                  <td><a class="colorLetra" href="./rio-chichimene/prospectiva/usos_potenciales.html"
+                      target="_blank">Río Chichimene, Prospectiva: Usos potenciales por tramos</a></td>
+                </tr>
+                <tr>
+                  <td><a class="colorLetra" href="./rio-chichimene/prospectiva/escenarios_modelizacion.html"
+                      target="_blank">Río Chichimene, Prospectiva: Escenarios de modelización</a></td>
+                </tr>
+                <tr>
+                  <td><a class="colorLetra" href="./rio-chichimene/formulacion/formulacion.html" target="_blank">Río
+                      Chichimene, Formulación</a></td>
+                </tr>
+                <tr>
+                  <td><a class="colorLetra" href="./rio-chichimene/formulacion/clasificacion_aguas.html"
+                      target="_blank">Río Chichimene, Formulación: Clasificación del agua</a></td>
+                </tr>
+                <tr>
+                  <td><a class="colorLetra" href="./rio-chichimene/formulacion/inventario_usuarios.html"
+                      target="_blank">Río Chichimene, Formulación: Inventario de usuarios</a></td>
+                </tr>
+                <tr>
+                  <td><a class="colorLetra" href="./rio-chichimene/formulacion/objetivos_calidad.html"
+                      target="_blank">Río Chichimene, Formulación: Objetivos de calidad</a></td>
+                </tr>
+                <tr>
+                  <td><a class="colorLetra" href="./rio-chichimene/formulacion/zonas_uso.html" target="_blank">Río
+                      Chichimene, Formulación: Zona/Condiciones de Usos</a></td>
+                </tr>
+                <tr>
+                  <td><a class="colorLetra" href="./rio-chichimene/formulacion/metas_quinquenales.html"
+                      target="_blank">Río Chichimene, Formulación: Metas quinquenales</a></td>
+                </tr>
+                <tr>
+                  <td><a class="colorLetra" href="./rio-chichimene/formulacion/estructuracion_porh.html"
+                      target="_blank">Río Chichimene, Formulación: Estructuración del PORH</a></td>
+                </tr>
+                <tr>
+                  <td><a class="colorLetra" href="./rio-chichimene/lineas-estrategicas/lineas-estrategicas.html"
+                      target="_blank">Río Chichimene, Líneas estratégicas</a></td>
+                </tr>
+                <tr>
+                  <td><a class="colorLetra" href="./rio-chichimene/lineas-estrategicas/instrumentacion.html"
+                      target="_blank">Río Chichimene, Líneas estratégicas: Instrumentación de la corriente principal</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td><a class="colorLetra" href="./rio-chichimene/lineas-estrategicas/divulgacion.html"
+                      target="_blank">Río Chichimene, Líneas estratégicas: Divulgación de riesgos</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+
+
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Carousel -->
+  <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="../../img/Banners PORH-01.png" class="d-block w-100 contraste" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="../../img/Banners PORH-02.png" class="d-block w-100 contraste" alt="...">
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+  <!-- Page Content -->
+  <div class="container mt-3 fondoBlanco">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb mapaNavFondo" style="background-color: #5745a1">
+        <li class="breadcrumb-item"><a class="mapaNavLetra" href="../../index.html" style="color: #fff">Inicio</a></li>
+        <li class="breadcrumb-item"><a class="mapaNavLetra" href="../rio_acaciitas.html" style="color: #fff">Río
+            Chichimene</a></li>
+        <li class="breadcrumb-item mapaNavLetra" style="color: rgb(192, 192, 192)" aria-current="page">Demanda hídrica
+        </li>
+      </ol>
+    </nav>
+    <div class="row">
+      <div class="col-12 colorLetra">
+        <h1 class="miH1">OFERTA HÍDRICA Y ANÁLISIS DE RIESGOS</h1>
+        <hr class="my-3">
+        <p>La estimación de la oferta hídrica natural de una cuenca define una fase fundamental en la determinación de
+          la disponibilidad del recurso hídrico, previo aprovechamiento del mismo. Para la estimación de caudales medios
+          se utilizó el método del balance hídrico de largo plazo que permite definir el caudal medio en un punto de una
+          corriente con base en las características medias de precipitación y evapotranspiración en la cuenca definida
+          por dicho punto.</p>
+        <br>
+        <h3 class="colorTitulos miH3" style="color: #e76f2b">Oferta hídrica total</h3>
+        <p>La oferta hídrica superficial para este estudio representa el volumen de agua que escurre por la superficie e
+          integra los sistemas de drenaje y sus principales afluentes</p>
+        <div class="card mb-3 shadow fondoBlanco ">
+          <img class="card-img-top" src="http://placehold.it/800x250" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title colorLetra miH5">Clasificación del Ciclo Hidrológico Anual para el Río Chichimene en
+              el sitio de su desembocadura al río Acacias</h5>
+            <!-- <p class="card-text"></p> -->
+            <p class="card-text"><small class="colorLetra">Fuente: ...</small></p>
+          </div>
+        </div>
+        <div class="table-responsive">
+          <table class="table table-striped table-hover text-center">
+            <h4 class="my-3 colorTitulos miH4" style="color: #c26027">Resultados de la Oferta hídrica para condiciones
+              normales y secas</h4>
+            <thead>
+              <tr class="table-dark colorLetra">
+                <th colspan="2">SUBCUENCAS</th>
+                <th colspan="4">OFERTA HÍDRICA TOTAL</th>
+              </tr>
+              <tr class="table-dark colorLetra">
+                <th>CÓDIGO</th>
+                <th>NOMBRE</th>
+                <th>OFERTA (m3/s)</th>
+                <th>OFERTA SECA<br />
+                  (m3/s)</th>
+                <th>OFERTA MES DE<br />
+                  VERANO (m3/s)</th>
+                <th>OFERTA MES DE<br />
+                  VERANO SECO (m3/s)</th>
+              </tr>
+            </thead>
+            <tbody class="colorLetra">
+
+              <tr>
+                <td>3501-04</td>
+                <td>Rio Chichimene</td>
+                <td>12,91</td>
+                <td>11,76</td>
+                <td>4</td>
+                <td>3,82</td>
+              </tr>
+              <tr>
+                <td>3501-04_001</td>
+                <td>Caño N.N. 1</td>
+                <td>0,25</td>
+                <td>0,23</td>
+                <td>0,08</td>
+                <td>0,07</td>
+              </tr>
+              <tr>
+                <td>3501-04_002</td>
+                <td>Caño N.N. 2</td>
+                <td>0,34</td>
+                <td>0,29</td>
+                <td>0,09</td>
+                <td>0,09</td>
+              </tr>
+              <tr>
+                <td>3501-04_003</td>
+                <td>Caño Chipas</td>
+                <td>2,75</td>
+                <td>2,46</td>
+                <td>0,84</td>
+                <td>0,81</td>
+              </tr>
+              <tr>
+                <td>3501-04_004</td>
+                <td>Caño Piedras</td>
+                <td>0,78</td>
+                <td>0,7</td>
+                <td>0,23</td>
+                <td>0,22</td>
+              </tr>
+              <tr>
+                <td>3501-04_005</td>
+                <td>Caño Arrecifes</td>
+                <td>0,45</td>
+                <td>0,37</td>
+                <td>0,1</td>
+                <td>0,09</td>
+              </tr>
+              <tr>
+                <td>3501-04_006</td>
+                <td>Caño N.N. 3</td>
+                <td>0,36</td>
+                <td>0,3</td>
+                <td>0,08</td>
+                <td>0,07</td>
+              </tr>
+              <tr>
+                <td>3501-04_007</td>
+                <td>Caño N.N. 4</td>
+                <td>0,15</td>
+                <td>0,14</td>
+                <td>0,04</td>
+                <td>0,04</td>
+              </tr>
+              <tr>
+                <td>3501-04_008</td>
+                <td>Caño Tres Rotos</td>
+                <td>0,36</td>
+                <td>0,3</td>
+                <td>0,08</td>
+                <td>0,07</td>
+              </tr>
+              <tr>
+                <td>3501-04_009</td>
+                <td>Caño Blanco</td>
+                <td>0,33</td>
+                <td>0,29</td>
+                <td>0,1</td>
+                <td>0,09</td>
+              </tr>
+              <tr>
+                <td>3501-04_010</td>
+                <td>Caño Chavisnavis</td>
+                <td>1,95</td>
+                <td>1,75</td>
+                <td>0,58</td>
+                <td>0,5</td>
+              </tr>
+              <tr>
+                <td>3501-04_011</td>
+                <td>Caño Las Brisas</td>
+                <td>0,19</td>
+                <td>0,17</td>
+                <td>0,05</td>
+                <td>0,04</td>
+              </tr>
+              <tr>
+                <td>3501-04_012</td>
+                <td>Caño Yeguas</td>
+                <td>0,26</td>
+                <td>0,23</td>
+                <td>0,07</td>
+                <td>0,06</td>
+              </tr>
+              <tr>
+                <td>3501-04_013</td>
+                <td>S/N Chichimene</td>
+                <td>2,99</td>
+                <td>2,71</td>
+                <td>0,95</td>
+                <td>0,91</td>
+              </tr>
+              <tr>
+                <td style="text-align: left;" colspan="6">Oferta: Representa el caudal medio multianual de la cuenca
+                </td>
+              </tr>
+              <tr>
+                <td style="text-align: left;" colspan="6">Oferta Seca: Corresponde al caudal medio multianual de la
+                  cuenca bajo condiciones secas (Oferta en condiciones secas) en función de las condiciones del El Niño.
+                </td>
+              </tr>
+              <tr>
+                <td style="text-align: left;" colspan="6">Oferta mes de verano: Como consecuencia del régimen
+                  hidrológico predominante en la cuenca, el río Chichimene presenta mayor demanda de agua y menor oferta
+                  durante el mes de enero, la oferta en el mes de verano está dada por el caudal medio multianual de la
+                  cuenca para el mes de enero.</td>
+              </tr>
+              <tr>
+                <td style="text-align: left;" colspan="6">Oferta mes de verano seco: corresponde al caudal medio
+                  multianual del mes de enero bajo condiciones secas derivadas del fenómeno del Niño (ENSO).</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <hr class="my-3">
+        <h3 class="colorTitulos miH3" style="color: #e76f2b">Caudales ambientales</h3>
+        <p>Los caudales ambientales obtenidos a partir de la metodología 7Q10 ?Q95 es intermedia, y aproximadamente el
+          caudal ambiental representa el 47% del caudal medio multianual. En la Tabla se presentan los caudales
+          ambientales usando esta metodología para la cuenca del río Chichimene.</p>
+        <div class="table-responsive">
+          <table class="table table-striped table-hover text-center">
+            <h4 class="my-3 colorTitulos miH4" style="color: #c26027">Caudales ambientales usando la metodología
+              7Q10-Q95</h4>
+            <thead>
+              <tr class="table-dark colorLetra">
+                <th colspan="2">SUBCUENCAS</th>
+                <th colspan="4">CAUDAL AMBIENTAL 7Q10 Q95</th>
+              </tr>
+              <tr class="table-dark colorLetra">
+                <th>CÓDIGO</th>
+                <th>NOMBRE</th>
+                <th>CAUDAL<br />
+                  AMBIENTAL<br />
+                  (m3/s)</th>
+                <th>CAUDAL<br />
+                  AMBIENTAL SECO<br />
+                  (m3/s)</th>
+                <th>CAUDAL AMBIENTAL<br />
+                  MES DE VERANO<br />
+                  (m3/s)</th>
+                <th>CAUDAL<br />
+                  AMBIENTAL MES<br />
+                  DE VERANO SECO<br />
+                  (m3/s)</th>
+              </tr>
+            </thead>
+            <tbody class="colorLetra">
+              <tr>
+                <td>3501-04</td>
+                <td>Rio Chichimene</td>
+                <td>5,09</td>
+                <td>4,64</td>
+                <td>3,24</td>
+                <td>2,53</td>
+              </tr>
+              <tr>
+                <td>3501-04_001</td>
+                <td>Caño N.N. 1</td>
+                <td>0,09</td>
+                <td>0,09</td>
+                <td>0,05</td>
+                <td>0,05</td>
+              </tr>
+              <tr>
+                <td>3501-04_002</td>
+                <td>Caño N.N. 2</td>
+                <td>0,1</td>
+                <td>0,09</td>
+                <td>0,06</td>
+                <td>0,05</td>
+              </tr>
+              <tr>
+                <td>3501-04_003</td>
+                <td>Caño Chipas</td>
+                <td>1</td>
+                <td>0,96</td>
+                <td>0,63</td>
+                <td>0,55</td>
+              </tr>
+              <tr>
+                <td>3501-04_004</td>
+                <td>Caño Piedras</td>
+                <td>0,28</td>
+                <td>0,26</td>
+                <td>0,19</td>
+                <td>0,14</td>
+              </tr>
+              <tr>
+                <td>3501-04_005</td>
+                <td>Caño Arrecifes</td>
+                <td>0,11</td>
+                <td>0,1</td>
+                <td>0,06</td>
+                <td>0,06</td>
+              </tr>
+              <tr>
+                <td>3501-04_006</td>
+                <td>Caño N.N. 3</td>
+                <td>0,09</td>
+                <td>0,08</td>
+                <td>0,05</td>
+                <td>0,05</td>
+              </tr>
+              <tr>
+                <td>3501-04_007</td>
+                <td>Caño N.N. 4</td>
+                <td>0,05</td>
+                <td>0,05</td>
+                <td>0,03</td>
+                <td>0,03</td>
+              </tr>
+              <tr>
+                <td>3501-04_008</td>
+                <td>Caño Tres Rotos</td>
+                <td>0,09</td>
+                <td>0,08</td>
+                <td>0,06</td>
+                <td>0,04</td>
+              </tr>
+              <tr>
+                <td>3501-04_009</td>
+                <td>Caño Blanco</td>
+                <td>0,12</td>
+                <td>0,11</td>
+                <td>0,07</td>
+                <td>0,07</td>
+              </tr>
+              <tr>
+                <td>3501-04_010</td>
+                <td>Caño Chavisnavi</td>
+                <td>0,68</td>
+                <td>0,64</td>
+                <td>0,45</td>
+                <td>0,37</td>
+              </tr>
+              <tr>
+                <td>3501-04_011</td>
+                <td>Caño Las Brisas</td>
+                <td>0,06</td>
+                <td>0,05</td>
+                <td>0,03</td>
+                <td>0,03</td>
+              </tr>
+              <tr>
+                <td>3501-04_012</td>
+                <td>Caño Yeguas</td>
+                <td>0,08</td>
+                <td>0,07</td>
+                <td>0,04</td>
+                <td>0,04</td>
+              </tr>
+              <tr>
+                <td>3501-04_013</td>
+                <td>S/N Chichimene</td>
+                <td>1,18</td>
+                <td>1,07</td>
+                <td>0,76</td>
+                <td>0,61</td>
+              </tr>
+              <tr>
+                <td style="text-align: left;" colspan="6">Caudal Ambiental: Representa el caudal ambienta promedio
+                  multianual de la cuenca</td>
+              </tr>
+              <tr>
+                <td style="text-align: left;" colspan="6">Caudal Ambiental Seco: Corresponde al caudal ambiental
+                  promedio multianual en condiciones secas en función de las condiciones del El Niño.</td>
+              </tr>
+              <tr>
+                <td style="text-align: left;" colspan="6">Caudal Ambiental mes de verano: Caudal ambiental promedio para
+                  el mes de enero.</td>
+              </tr>
+              <tr>
+                <td style="text-align: left;" colspan="6">Caudal Ambiental mes de verano seco: corresponde al caudal
+                  ambiental del mes de enero bajo condiciones secas derivadas del fenómeno del Niño (ENSO).</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <hr class="my-3">
+        <h3 class="colorTitulos miH3" style="color: #e76f2b">Oferta hídrica disponible</h3>
+        <p>En el presente estudio, se consideran la oferta hídrica superficial y la oferta hídrica natural disponible.
+          Esta última resulta de sustraer a la primera el agua que garantizaría el uso para el funcionamiento de los
+          ecosistemas, de los sistemas fluviales y -en alguna medida? un caudal mínimo para usuarios que dependen de las
+          fuentes hídricas asociadas a estos ecosistemas que se equipara con el caudal ambiental. Los resultados
+          obtenidos para el cálculo de la oferta hídrica para la cuenca del río Chichimene se presenta en la Tabla.</p>
+        <div class="table-responsive">
+          <table class="table table-striped table-hover text-center">
+            <h4 class="my-3 colorTitulos miH4" style="color: #c26027">Oferta hídrica disponible para condiciones
+              normales y secas</h4>
+            <thead>
+              <tr class="table-dark colorLetra">
+                <th colspan="2">SUBCUENCAS</th>
+                <th colspan="4">OFERTA HÍDRICA DISPONIBLE</th>
+              </tr>
+              <tr class="table-dark colorLetra">
+                <th>CÓDIGO</th>
+                <th>NOMBRE</th>
+                <th>OFERTA (m3/s)</th>
+                <th>OFERTA SECA<br />
+                  (m3/s)</th>
+                <th>OFERTA MES DE<br />
+                  VERANO (m3/s)</th>
+                <th>OFERTA MES DE<br />
+                  VERANO SECO (m3/s)</th>
+              </tr>
+            </thead>
+            <tbody class="colorLetra">
+              <tr>
+                <td>3501-04</td>
+                <td>Rio Chichimene</td>
+                <td>7,82</td>
+                <td>7,12</td>
+                <td>0,77</td>
+                <td>1,29</td>
+              </tr>
+              <tr>
+                <td>3501-04_001</td>
+                <td>Caño N.N. 1</td>
+                <td>0,16</td>
+                <td>0,14</td>
+                <td>0,02</td>
+                <td>0,02</td>
+              </tr>
+              <tr>
+                <td>3501-04_002</td>
+                <td>Caño N.N. 2</td>
+                <td>0,24</td>
+                <td>0,19</td>
+                <td>0,02</td>
+                <td>0,04</td>
+              </tr>
+              <tr>
+                <td>3501-04_003</td>
+                <td>Caño Chipas</td>
+                <td>1,75</td>
+                <td>1,51</td>
+                <td>0,2</td>
+                <td>0,26</td>
+              </tr>
+              <tr>
+                <td>3501-04_004</td>
+                <td>Caño Piedras</td>
+                <td>0,5</td>
+                <td>0,45</td>
+                <td>0,04</td>
+                <td>0,08</td>
+              </tr>
+              <tr>
+                <td>3501-04_005</td>
+                <td>Caño Arrecifes</td>
+                <td>0,34</td>
+                <td>0,27</td>
+                <td>0,03</td>
+                <td>0,03</td>
+              </tr>
+              <tr>
+                <td>3501-04_006</td>
+                <td>Caño N.N. 3</td>
+                <td>0,27</td>
+                <td>0,22</td>
+                <td>0,03</td>
+                <td>0,02</td>
+              </tr>
+              <tr>
+                <td>3501-04_007</td>
+                <td>Caño N.N. 4</td>
+                <td>0,1</td>
+                <td>0,09</td>
+                <td>0,01</td>
+                <td>0,01</td>
+              </tr>
+              <tr>
+                <td>3501-04_008</td>
+                <td>Caño Tres Rotos</td>
+                <td>0,27</td>
+                <td>0,22</td>
+                <td>0,02</td>
+                <td>0,03</td>
+              </tr>
+              <tr>
+                <td>3501-04_009</td>
+                <td>Caño Blanco</td>
+                <td>0,21</td>
+                <td>0,18</td>
+                <td>0,03</td>
+                <td>0,02</td>
+              </tr>
+              <tr>
+                <td>3501-04_010</td>
+                <td>Caño Chavisnavi</td>
+                <td>1,27</td>
+                <td>1,12</td>
+                <td>0,13</td>
+                <td>0,13</td>
+              </tr>
+              <tr>
+                <td>3501-04_011</td>
+                <td>Caño Las Brisas</td>
+                <td>0,13</td>
+                <td>0,12</td>
+                <td>0,02</td>
+                <td>0,01</td>
+              </tr>
+              <tr>
+                <td>3501-04_012</td>
+                <td>Caño Yeguas</td>
+                <td>0,18</td>
+                <td>0,16</td>
+                <td>0,03</td>
+                <td>0,02</td>
+              </tr>
+              <tr>
+                <td>3501-04_013</td>
+                <td>S/N Chichimene</td>
+                <td>1,81</td>
+                <td>1,64</td>
+                <td>0,19</td>
+                <td>0,30</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <hr class="my-3">
+        <h3 class="colorTitulos miH3" style="color: #e76f2b">Análisis de riesgos asociados a la oferta y la
+          disponibilidad del recurso hídrico</h3>
+        <p>El análisis de riesgos está asociado a la reducción de la oferta y a la disponibilidad del recurso hídrico.
+        </p>
+        <p>Al realizar un análisis comparativo entre los riesgos evaluados, se presenta un Riesgo Alto asociado a la
+          oferta y disponibilidad del recurso hídrico para el río Chichimene y sus afluentes, tal y como se evidencia en
+          el mapa.</p>
+        <p>Las condiciones más críticas en cuanto a la oferta hídrica disponible se presentan durante Enero, cuando la
+          demanda por el recurso aumenta fuertemente y la oferta disminuye de manera considerable; además los
+          ecosistemas se vuelven más frágiles por lo que se justifica un caudal ambiental alto para dicha fecha. Es por
+          ello que se recomienda a la corporación restringir el uso del recurso hídrico durante la época de verano
+          (meses de diciembre, enero, febrero y marzo) considerando la oferta hídrica disponible como la estimada para
+          el mes de Enero, y para el resto de los meses se recomienda utilizar como el valor de oferta neta (Oferta
+          hídrica neta promedio multianual).</p>
+        <p>Detalle del análisis de riesgos por tipo de riesgo analizado más descripción y resultados de los índices
+          pertinentes utilizados:</p>
+        <div class="card mb-3 shadow fondoBlanco ">
+          <img class="card-img-top" src="http://placehold.it/800x250" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title colorLetra miH5">Riesgo Alto asociado a la oferta y disponibilidad del recurso hídrico
+              para el río Chichimene</h5>
+            <!-- <p class="card-text"></p> -->
+            <p class="card-text"><small class="colorLetra">Fuente: ...</small></p>
+          </div>
+        </div>
+        <hr class="my-3">
+        <br>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <h3 class="colorTitulos miH3" style="color: #e76f2b">Riesgo asociado a la reducción de la oferta</h3>
+        <br>
+        <h4 class="colorTitulos miH4" style="color: #e76f2b">Análisis del riesgo asociado a la reducción de la oferta
+        </h4>
+        <p>
+          El análisis de riesgos asociado a la reducción de la oferta, para el caso del río Chichimene y sus afluentes,
+          indica que el IVH, actual y proyectado, y para año normal y seco, se obtuvo como resultado Muy Alto, por lo
+          tanto, la amenaza para la corriente y sus afluentes se considera Alta, razón por la cual se evaluarán las
+          captaciones superficiales asociadas al río Chichimene.
+        </p>
+        <p>
+          Igualmente, la vulnerabilidad se determina identificando las captaciones para abastecimiento doméstico,
+          agrícola y piscícola, en los tramos donde se definió previamente el tipo de amenaza, donde para el río
+          Chichimene y afluentes se estableció amenaza de tipo Alta. Se debe considerar una vulnerabilidad alta para las
+          captaciones de tipo doméstico y media para los dos usos restantes.
+        </p>
+        <p>
+          En la Tabla, se relacionan las captaciones superficiales identificadas a lo largo del río Chichimene y sus
+          tributarios, donde se evalúa la amenaza y la vulnerabilidad con el propósito de establecer las condiciones de
+          riesgo asociadas a la oferta hídrica.
+        </p>
+        <div class="table-responsive mt-3">
+          <table class="table table-striped table-hover text-center">
+            <thead>
+              <h4 class="colorTitulos miH4" style="color: #e76f2b">Riesgo asociado a la reducción de la oferta sobre el
+                río Chichimene y sus afluentes</h4>
+              <tr class="table-dark colorLetra">
+                <th rowspan="2" valign="middle">NOMBRE USUARIO</th>
+                <th colspan="2">COORDENADAS</th>
+                <th>VEREDA</th>
+                <th>PREDIO</th>
+                <th>FUENTE HÍDRICA<br />
+                  CAPTACIÓN</th>
+                <th>USO</th>
+                <th>VULNERABILIDAD</th>
+                <th>AMENAZA</th>
+                <th>RIESGO</th>
+              </tr>
+              <tr class="table-dark colorLetra">
+                <th>X</th>
+                <th>Y</th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody class="colorLetra">
+              <tr>
+                <td>Palmeras del Llano</td>
+                <td>1049632</td>
+                <td>934649</td>
+                <td>Dinamarca</td>
+                <td>Palmeras del Llano</td>
+                <td>Caño Perú</td>
+                <td>Industrial</td>
+                <td style="background-color: orange">Media</td>
+                <td style="background-color: red">Alta</td>
+                <td style="background-color: red">Alto</td>
+              </tr>
+              <tr>
+                <td>Alianza Oriental S.A.</td>
+                <td>1055146</td>
+                <td>933550</td>
+                <td>La Loma</td>
+                <td>Alianza Oriental S.A.</td>
+                <td>Caño Yeguas</td>
+                <td>Industrial</td>
+                <td style="background-color: orange">Media</td>
+                <td style="background-color: red">Alta</td>
+                <td style="background-color: red">Alto</td>
+              </tr>
+              <tr>
+                <td>Industria Aceites Manuelita S.A.</td>
+                <td>1081612</td>
+                <td>921266</td>
+                <td>Patagonia</td>
+                <td>Hacienda Yaguarito</td>
+                <td>Río Chichimene</td>
+                <td>Agrícola, Industrial</td>
+                <td style="background-color: orange">Media</td>
+                <td style="background-color: red">Alta</td>
+                <td style="background-color: red">Alto</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <br>
+        <h4 class="colorTitulos miH4" style="color: #e76f2b">Índice de uso del Agua (IUA)</h4>
+        <p>
+          Representa la relación entre la demanda y la oferta del recurso hídrico considerando el caudal ambiental, es
+          una medida de la escasez en la cuenca.
+        </p>
+        <!-- botones que redireccionan a pdf's -->
+        <div class="row">
+          <div class="col">
+            <button class="btn btn-secondary btn-block colorLetra miP">Uso del agua en año normal</button>
+          </div>
+          <!-- Modal DUD -->
+          <div class="col">
+            <button class="btn btn-secondary btn-block colorLetra miP">Uso del agua en año seco</button>
+          </div>
+        </div>
+        <div class="table-responsive mt-3">
+          <table class="table table-striped table-hover text-center">
+            <thead>
+              <h4 class="colorTitulos miH4" style="color: #e76f2b">Categorización del IUA según el ENA-2010</h4>
+              <tr class="table-dark colorLetra">
+                <th>RANGO (Dh/Oh)*100 IUA</th>
+                <th>CATEGORÍA IUA</th>
+                <th>SIGNIFICADO</th>
+              </tr>
+            </thead>
+            <tbody class="colorLetra">
+              <tr>
+                <td>&gt; 50</td>
+                <td style="background-color: red">Muy alto</td>
+                <td>La presión de la demanda es muy alta con respecto a la oferta disponible</td>
+              </tr>
+              <tr>
+                <td>20/01/50</td>
+                <td style="background-color: orange">Alto</td>
+                <td>La presión de la demanda es alta con respecto a la oferta disponible</td>
+              </tr>
+              <tr>
+                <td>10/01/20</td>
+                <td style="background-color: yellow">Moderado</td>
+                <td>La presión de la demanda es moderada con respecto a la oferta disponible</td>
+              </tr>
+              <tr>
+                <td>01/10/16</td>
+                <td style="background-color: green">Bajo</td>
+                <td>La presión de la demanda es baja con respecto a la oferta disponible</td>
+              </tr>
+              <tr>
+                <td>? 1</td>
+                <td style="background-color: blue">Muy bajo</td>
+                <td>La presión de la demanda no es significativa con respecto a la oferta disponible</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="table-responsive mt-3">
+          <table class="table table-striped table-hover text-center">
+            <thead>
+              <h4 class="colorTitulos miH4" style="color: #e76f2b">IUA para la cuenca del río Chichimene</h4>
+              <tr class="table-dark colorLetra">
+                <th colspan="2">SUBCUENCAS</th>
+                <th colspan="2">IUA</th>
+              </tr>
+              <tr class="table-dark colorLetra">
+                <th>CODIGO</th>
+                <th>NOMBRE</th>
+                <th>AÑO NORMAL</th>
+                <th>AÑO SECO</th>
+              </tr>
+            </thead>
+            <tbody class="colorLetra">
+              <tr>
+                <td>3501-04</td>
+                <td>Rio Chichimene</td>
+                <td style="background-color: red">59,00%</td>
+                <td style="background-color: red">65,00%</td>
+              </tr>
+              <tr>
+                <td>3501-04_001</td>
+                <td>Caño N.N 1</td>
+                <td style="background-color: red">136,00%</td>
+                <td style="background-color: red">152,00%</td>
+              </tr>
+              <tr>
+                <td>3501-04_002</td>
+                <td>Caño N.N. 2</td>
+                <td style="background-color: red">77,00%</td>
+                <td style="background-color: red">94,00%</td>
+              </tr>
+              <tr>
+                <td>3501-04_003</td>
+                <td>Caño Chipas</td>
+                <td style="background-color: red">71,00%</td>
+                <td style="background-color: red">83,00%</td>
+              </tr>
+              <tr>
+                <td>3501-04_004</td>
+                <td>Caño Piedras</td>
+                <td style="background-color: red">84,00%</td>
+                <td style="background-color: red">93,00%</td>
+              </tr>
+              <tr>
+                <td>3501-04_005</td>
+                <td>Caño Arrecifes</td>
+                <td style="background-color: red">63,00%</td>
+                <td style="background-color: red">77,00%</td>
+              </tr>
+              <tr>
+                <td>3501-04_006</td>
+                <td>Caño N.N. 3</td>
+                <td style="background-color: red">77,00%</td>
+                <td style="background-color: red">95,00%</td>
+              </tr>
+              <tr>
+                <td>3501-04_007</td>
+                <td>Caño N.N. 4</td>
+                <td style="background-color: red">112,00%</td>
+                <td style="background-color: red">128,00%</td>
+              </tr>
+              <tr>
+                <td>3501-04_008</td>
+                <td>Caño Tres Rotos</td>
+                <td style="background-color: red">73,00%</td>
+                <td style="background-color: red">89,00%</td>
+              </tr>
+              <tr>
+                <td>3501-04_009</td>
+                <td>Caño Blanco</td>
+                <td style="background-color: red">89,00%</td>
+                <td style="background-color: red">102,00%</td>
+              </tr>
+              <tr>
+                <td>3501-04_010</td>
+                <td>Caño Chavisnavis</td>
+                <td style="background-color: orange">49,00%</td>
+                <td style="background-color: red">56,00%</td>
+              </tr>
+              <tr>
+                <td>3501-04_011</td>
+                <td>Caño Las Brisas</td>
+                <td style="background-color: orange">35,00%</td>
+                <td style="background-color: orange">40,00%</td>
+              </tr>
+              <tr>
+                <td>3501-04_012</td>
+                <td>Caño Yeguas</td>
+                <td style="background-color: orange">25,00%</td>
+                <td style="background-color: orange">28,00%</td>
+              </tr>
+              <tr>
+                <td>3501-04_013</td>
+                <td>S/N Chichimene</td>
+                <td style="background-color: red">52,00%</td>
+                <td style="background-color: red">57,00%</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <br>
+        <h4 class="colorTitulos miH4" style="color: #e76f2b">Índice de retención y regulación (IRH)</h4>
+        <p>
+          La obtención del índice de regulación y retención hídrica (IRH), se basa fundamentarme en la curva de duración
+          de caudales medios para los caudales medios diarios. Su estimación resulta de la relación por el área que se
+          encuentra por debajo de la línea de caudal medio y la correspondiente área total por debajo de la curva de
+          duración de caudales diarios.
+        </p>
+        <div class="table-responsive mt-3">
+          <table class="table table-striped table-hover text-center">
+            <thead>
+              <h4 class="colorTitulos miH4" style="color: #e76f2b">Resultados de la estimación del IRH para la cuenca
+                del río Chichimene</h4>
+              <tr class="table-dark colorLetra">
+                <th>CODIGO</th>
+                <th>NOMBRE</th>
+                <th>IRH</th>
+              </tr>
+            </thead>
+            <tbody class="colorLetra">
+              <tr>
+                <td>3501-04</td>
+                <td>Rio Chichimene</td>
+                <td style="background-color: red">0,44</td>
+              </tr>
+              <tr>
+                <td>3501-04_001</td>
+                <td>Caño N.N. 1</td>
+                <td style="background-color: red">0,38</td>
+              </tr>
+              <tr>
+                <td>3501-04_002</td>
+                <td>Caño N.N. 2</td>
+                <td style="background-color: red">0,30</td>
+              </tr>
+              <tr>
+                <td>3501-04_003</td>
+                <td>Caño Chipas</td>
+                <td style="background-color: red">0,37</td>
+              </tr>
+              <tr>
+                <td>3501-04_004</td>
+                <td>Caño Piedras</td>
+                <td style="background-color: red">0,38</td>
+              </tr>
+              <tr>
+                <td>3501-04_005</td>
+                <td>Caño Arrecifes</td>
+                <td style="background-color: red">0,29</td>
+              </tr>
+              <tr>
+                <td>3501-04_006</td>
+                <td>Caño N.N. 3</td>
+                <td style="background-color: red">0,29</td>
+              </tr>
+              <tr>
+                <td>3501-04_007</td>
+                <td>Caño N.N. 4</td>
+                <td style="background-color: red">0,36</td>
+              </tr>
+              <tr>
+                <td>3501-04_008</td>
+                <td>Caño Tres Rotos</td>
+                <td style="background-color: red">0,29</td>
+              </tr>
+              <tr>
+                <td>3501-04_009</td>
+                <td>Caño Blanco</td>
+                <td style="background-color: red">0,42</td>
+              </tr>
+              <tr>
+                <td>3501-04_010</td>
+                <td>Caño Chavisnavi</td>
+                <td style="background-color: red">0,42</td>
+              </tr>
+              <tr>
+                <td>3501-04_011</td>
+                <td>Caño Las Brisas</td>
+                <td style="background-color: red">0,40</td>
+              </tr>
+              <tr>
+                <td>3501-04_012</td>
+                <td>Caño Yeguas</td>
+                <td style="background-color: red">0,40</td>
+              </tr>
+              <tr>
+                <td>3501-04_013</td>
+                <td>S/N Chichimene</td>
+                <td style="background-color: red">0,43</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <br>
+        <h4 class="colorTitulos miH4" style="color: #e76f2b">Índice de vulnerabilidad al desabastecimiento (IVH)</h4>
+        <p>
+          Este índice permite determinar la fragilidad de mantener la oferta de agua para abastecimiento, ayuda a
+          determinar el grado de fragilidad del sistema hídrico para mantener una oferta para el abastecimiento de agua,
+          que ante amenazas ?como periodos largos de estiaje? podría generar riesgos de desabastecimiento.
+        </p>
+        <!-- botones que redireccionan a pdf's -->
+        <div class="row">
+          <div class="col">
+            <button class="btn btn-secondary btn-block colorLetra miP">Indice de vulnerabilidad del Recurso Hídrico en
+              año normal</button>
+          </div>
+          <!-- Modal DUD -->
+          <div class="col">
+            <button class="btn btn-secondary btn-block colorLetra miP">Indice de vulnerabilidad del Recurso Hídrico en
+              año seco</button>
+          </div>
+        </div>
+        <div class="table-responsive mt-3">
+          <table class="table table-striped table-hover text-center">
+            <thead>
+              <h4 class="colorTitulos miH4" style="color: #e76f2b">CATEGORÍA del IVH</h4>
+              <tr class="table-dark colorLetra">
+                <th colspan="3">CATEGORÍAS ÍNDICE DE VULNERABILIDAS AL DESABASTECIMIENTO (IVI)</th>
+              </tr>
+              <tr class="table-dark colorLetra">
+                <th>ÍNDICE DE USO DE<br />
+                  AGUA</th>
+                <th>ÍNDICE DE REGULACIÓN</th>
+                <th>CATEGORÍA<br />
+                  VULNERABILIDAD</th>
+              </tr>
+            </thead>
+            <tbody class="colorLetra">
+              <tr>
+                <td>Muy bajo</td>
+                <td>Alto</td>
+                <td style="background-color: blue">Muy bajo</td>
+              </tr>
+              <tr>
+                <td>Muy bajo</td>
+                <td>Moderado</td>
+                <td style="background-color: green">Bajo</td>
+              </tr>
+              <tr>
+                <td>Muy bajo</td>
+                <td>Bajo</td>
+                <td style="background-color: yellow">Medio</td>
+              </tr>
+              <tr>
+                <td>Muy bajo</td>
+                <td>Muy bajo</td>
+                <td style="background-color: yellow">Medio</td>
+              </tr>
+              <tr>
+                <td>Bajo</td>
+                <td>Alto</td>
+                <td style="background-color: green">Bajo</td>
+              </tr>
+              <tr>
+                <td>Bajo</td>
+                <td>Moderado</td>
+                <td style="background-color: green">Bajo</td>
+              </tr>
+              <tr>
+                <td>Bajo</td>
+                <td>Bajo</td>
+                <td style="background-color: yellow">Medio</td>
+              </tr>
+              <tr>
+                <td>Bajo</td>
+                <td>Muy bajo</td>
+                <td style="background-color: yellow">Medio</td>
+              </tr>
+              <tr>
+                <td>Medio</td>
+                <td>Alto</td>
+                <td style="background-color: yellow">Medio</td>
+              </tr>
+              <tr>
+                <td>Medio</td>
+                <td>Moderado</td>
+                <td style="background-color: yellow">Medio</td>
+              </tr>
+              <tr>
+                <td>Medio</td>
+                <td>Bajo</td>
+                <td style="background-color: orange">Alto</td>
+              </tr>
+              <tr>
+                <td>Medio</td>
+                <td>Muy bajo</td>
+                <td style="background-color: orange">Alto</td>
+              </tr>
+              <tr>
+                <td>Alto</td>
+                <td>Alto</td>
+                <td style="background-color: yellow">Medio</td>
+              </tr>
+              <tr>
+                <td>Alto</td>
+                <td>Moderado</td>
+                <td style="background-color: orange">Alto</td>
+              </tr>
+              <tr>
+                <td>Alto</td>
+                <td>Bajo</td>
+                <td style="background-color: orange">Alto</td>
+              </tr>
+              <tr>
+                <td>Alto</td>
+                <td>Muy bajo</td>
+                <td style="background-color: red">Muy alto</td>
+              </tr>
+              <tr>
+                <td>Muy alto</td>
+                <td>Alto</td>
+                <td style="background-color: yellow">Medio</td>
+              </tr>
+              <tr>
+                <td>Muy alto</td>
+                <td>Moderado</td>
+                <td style="background-color: orange">Alto</td>
+              </tr>
+              <tr>
+                <td>Muy alto</td>
+                <td>Bajo</td>
+                <td style="background-color: orange">Alto</td>
+              </tr>
+              <tr>
+                <td>Muy alto</td>
+                <td>Muy bajo</td>
+                <td style="background-color: red">Muy alto</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="table-responsive mt-3">
+          <table class="table table-striped table-hover text-center">
+            <thead>
+              <h4 class="colorTitulos miH4" style="color: #e76f2b">Resultados del IVH para la cuenca del río Chichimene
+              </h4>
+              <tr class="table-dark colorLetra">
+                <th colspan="2">SUBCUENCAS</th>
+                <th colspan="2">IVH</th>
+              </tr>
+              <tr class="table-dark colorLetra">
+                <th>CÓDIGO</th>
+                <th>NOMBRE</th>
+                <th>AÑO NORMAL</th>
+                <th>AÑO SECO</th>
+              </tr>
+            </thead>
+            <tbody class="colorLetra">
+              <tr>
+                <td>3501-04</td>
+                <td>Rio Chichimene</td>
+                <td style="background-color: red">Muy Alto</td>
+                <td style="background-color: red">Muy Alto</td>
+              </tr>
+              <tr>
+                <td>3501-04_001</td>
+                <td>Caño N.N. 1</td>
+                <td style="background-color: red">Muy Alto</td>
+                <td style="background-color: red">Muy Alto</td>
+              </tr>
+              <tr>
+                <td>3501-04_002</td>
+                <td>Caño N.N. 2</td>
+                <td style="background-color: red">Muy Alto</td>
+                <td style="background-color: red">Muy Alto</td>
+              </tr>
+              <tr>
+                <td>3501-04_003</td>
+                <td>Caño Chipas</td>
+                <td style="background-color: red">Muy Alto</td>
+                <td style="background-color: red">Muy Alto</td>
+              </tr>
+              <tr>
+                <td>3501-04_004</td>
+                <td>Caño Piedras</td>
+                <td style="background-color: red">Muy Alto</td>
+                <td style="background-color: red">Muy Alto</td>
+              </tr>
+              <tr>
+                <td>3501-04_005</td>
+                <td>Caño Arrecifes</td>
+                <td style="background-color: red">Muy Alto</td>
+                <td style="background-color: red">Muy Alto</td>
+              </tr>
+              <tr>
+                <td>3501-04_006</td>
+                <td>Caño N.N. 3</td>
+                <td style="background-color: red">Muy Alto</td>
+                <td style="background-color: red">Muy Alto</td>
+              </tr>
+              <tr>
+                <td>3501-04_007</td>
+                <td>Caño N.N. 4</td>
+                <td style="background-color: red">Muy Alto</td>
+                <td style="background-color: red">Muy Alto</td>
+              </tr>
+              <tr>
+                <td>3501-04_008</td>
+                <td>Caño Tres Rotos</td>
+                <td style="background-color: red">Muy Alto</td>
+                <td style="background-color: red">Muy Alto</td>
+              </tr>
+              <tr>
+                <td>3501-04_009</td>
+                <td>Caño Blanco</td>
+                <td style="background-color: red">Muy Alto</td>
+                <td style="background-color: red">Muy Alto</td>
+              </tr>
+              <tr>
+                <td>3501-04_010</td>
+                <td>Caño Chavisnavi</td>
+                <td style="background-color: red">Muy Alto</td>
+                <td style="background-color: red">Muy Alto</td>
+              </tr>
+              <tr>
+                <td>3501-04_011</td>
+                <td>Caño Las Brisas</td>
+                <td style="background-color: red">Muy Alto</td>
+                <td style="background-color: red">Muy Alto</td>
+              </tr>
+              <tr>
+                <td>3501-04_012</td>
+                <td>Caño Yeguas</td>
+                <td style="background-color: red">Muy Alto</td>
+                <td style="background-color: red">Muy Alto</td>
+              </tr>
+              <tr>
+                <td>3501-04_013</td>
+                <td>S/N Chichimene</td>
+                <td style="background-color: red">Muy Alto</td>
+                <td style="background-color: red">Muy Alto</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <br>
+        <h4 class="colorTitulos miH4" style="color: #e76f2b">Riesgo asociado a la disponibilidad del recurso hídrico
+        </h4>
+        <p class="colorLetra">
+          La evaluación del riesgo asociado a la disponibilidad del recurso hídrico, se realiza a partir de la calidad
+          del agua mediante el análisis cualitativo de los resultados del índice de calidad fisicoquímico ICACOSU fa y
+          el índice biológico BMWP/col, por tramos. En la Tabla se presenta, de manera consolidada, el resultado de los
+          índices BMWP/col e ICACOSU fa, determinados con base en los resultados de los monitoreos de calidad del agua
+          realizados en las estaciones definidas sobre el río Chichimene y sus tributarios.
+        </p>
+        <div class="table-responsive mt-3">
+          <table class="table table-striped table-hover text-center">
+            <thead>
+              <h4 class="colorTitulos miH4" style="color: #e76f2b">Consolidado índices de calidad del agua BMWP-Col e
+                ICACOSU Fa</h4>
+              <tr class="table-dark colorLetra">
+                <th colspan="3">INDICADORES</th>
+                <th colspan="3">BMWP &#8211; COL</th>
+                <th colspan="3">ICACOSU &#8211; FA</th>
+              </tr>
+              <tr class="table-dark colorLetra">
+                <th>Código Estación</th>
+                <th>Nombre Estación</th>
+                <th>Campaña 2013</th>
+                <th>Total BMWP</th>
+                <th>Clase</th>
+                <th>Calidad</th>
+                <th>Campaña 2013</th>
+                <th>Resultado ICACOSU fa</th>
+                <th>Clasificación de la Calidad</th>
+              </tr>
+            </thead>
+            <tbody class="colorLetra">
+              <tr>
+                <td>EChi_01</td>
+                <td>Caño San José</td>
+                <td>Octubre</td>
+                <td>42</td>
+                <td>III</td>
+                <td style="background-color: yellow">Dudosa</td>
+                <td>Octubre</td>
+                <td>0,83</td>
+                <td style="background-color: green">Aceptable</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td>Diciembre</td>
+                <td>70</td>
+                <td>II</td>
+                <td style="background-color: green">Aceptable</td>
+                <td>Diciembre</td>
+                <td>0,76</td>
+                <td style="background-color: green">Aceptable</td>
+              </tr>
+              <tr>
+                <td>EChi_02</td>
+                <td>Caño San José</td>
+                <td>Octubre</td>
+                <td>24</td>
+                <td>IV</td>
+                <td style="background-color: orange">Crítica</td>
+                <td>Octubre</td>
+                <td>0,68</td>
+                <td style="background-color: yellow">Regular</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td>Diciembre</td>
+                <td>12</td>
+                <td>V</td>
+                <td style="background-color: red">Muy crítica</td>
+                <td>Diciembre</td>
+                <td>0,77</td>
+                <td style="background-color: green">Aceptable</td>
+              </tr>
+              <tr>
+                <td>EChi_03</td>
+                <td>Caño Yeguas</td>
+                <td>Octubre</td>
+                <td>42</td>
+                <td>III</td>
+                <td style="background-color: yellow">Dudosa</td>
+                <td>Octubre</td>
+                <td>0,68</td>
+                <td style="background-color: yellow">Regular</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td>Diciembre</td>
+                <td>33</td>
+                <td>IV</td>
+                <td style="background-color: orange">Crítica</td>
+                <td>Diciembre</td>
+                <td>0,75</td>
+                <td style="background-color: green">Aceptable</td>
+              </tr>
+              <tr>
+                <td>EChi_04</td>
+                <td>Río Chichimene</td>
+                <td>Octubre</td>
+                <td>34</td>
+                <td>IV</td>
+                <td style="background-color: orange">Crítica</td>
+                <td>Octubre</td>
+                <td>0,69</td>
+                <td style="background-color: yellow">Regular</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td>Diciembre</td>
+                <td>61</td>
+                <td>II</td>
+                <td style="background-color: green">Aceptable</td>
+                <td>Diciembre</td>
+                <td>0,78</td>
+                <td style="background-color: green">Aceptable</td>
+              </tr>
+              <tr>
+                <td>EChi_05</td>
+                <td>Caño Chavisnavis</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>Diciembre</td>
+                <td>0,84</td>
+                <td style="background-color: green">Aceptable</td>
+              </tr>
+              <tr>
+                <td>EChi_06</td>
+                <td>Caño Tres Rotos</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>Octubre</td>
+                <td>0,71</td>
+                <td style="background-color: green">Aceptable</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td>Diciembre</td>
+                <td>36</td>
+                <td>III</td>
+                <td style="background-color: yellow">Dudosa</td>
+                <td>Diciembre</td>
+                <td>0,66</td>
+                <td style="background-color: yellow">Regular</td>
+              </tr>
+              <tr>
+                <td>EChi_07</td>
+                <td>Río Chichimene</td>
+                <td>Octubre</td>
+                <td>45</td>
+                <td>III</td>
+                <td style="background-color: yellow">Dudosa</td>
+                <td>Octubre</td>
+                <td>0,66</td>
+                <td style="background-color: yellow">Regular</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td>Diciembre</td>
+                <td>68</td>
+                <td>II</td>
+                <td style="background-color: green">Aceptable</td>
+                <td>Diciembre</td>
+                <td>0,78</td>
+                <td style="background-color: green">Aceptable</td>
+              </tr>
+              <tr>
+                <td>EChi_08</td>
+                <td>Caño Arrecifes</td>
+                <td>Octubre</td>
+                <td>57</td>
+                <td>III</td>
+                <td style="background-color: yellow">Dudosa</td>
+                <td>Octubre</td>
+                <td>0,8</td>
+                <td style="background-color: green">Aceptable</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td>Diciembre</td>
+                <td>50</td>
+                <td>III</td>
+                <td style="background-color: yellow">Dudosa</td>
+                <td>Diciembre</td>
+                <td>0,86</td>
+                <td style="background-color: green">Aceptable</td>
+              </tr>
+              <tr>
+                <td>EChi_09</td>
+                <td>Río Chichimene</td>
+                <td>Octubre</td>
+                <td>54</td>
+                <td>III</td>
+                <td style="background-color: yellow">Dudosa</td>
+                <td>Octubre</td>
+                <td>0,72</td>
+                <td style="background-color: green">Aceptable</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td>Diciembre</td>
+                <td>70</td>
+                <td>II</td>
+                <td style="background-color: green">Aceptable</td>
+                <td>Diciembre</td>
+                <td>0,77</td>
+                <td style="background-color: green">Aceptable</td>
+              </tr>
+              <tr>
+                <td>EChi_10</td>
+                <td>Río Chichimene</td>
+                <td>Octubre</td>
+                <td>21</td>
+                <td>IV</td>
+                <td style="background-color: orange">Crítica</td>
+                <td>Octubre</td>
+                <td>0,74</td>
+                <td style="background-color: green">Aceptable</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td>Diciembre</td>
+                <td>8</td>
+                <td>V</td>
+                <td style="background-color: red">Muy crítica</td>
+                <td>Diciembre</td>
+                <td>0,89</td>
+                <td style="background-color: green">Aceptable</td>
+              </tr>
+              <tr>
+                <td>EChi_11</td>
+                <td>Río Chichimene</td>
+                <td>Diciembre</td>
+                <td>16</td>
+                <td>IV</td>
+                <td style="background-color: orange">Crítica</td>
+                <td>Diciembre</td>
+                <td>0,85</td>
+                <td style="background-color: green">Aceptable</td>
+              </tr>
+              <tr>
+                <td>EChi_12</td>
+                <td>Río Chichimene</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>Octubre</td>
+                <td>0,74</td>
+                <td style="background-color: green">Aceptable</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td>Diciembre</td>
+                <td>11</td>
+                <td>V</td>
+                <td style="background-color: red">Muy crítica</td>
+                <td>Diciembre</td>
+                <td>0,91</td>
+                <td style="background-color: blue">Buena</td>
+              </tr>
+              <tr>
+                <td>EChi_13</td>
+                <td>Caño Chipas</td>
+                <td>Diciembre</td>
+                <td>44</td>
+                <td>III</td>
+                <td style="background-color: yellow">Dudosa</td>
+                <td>Diciembre</td>
+                <td>0,92</td>
+                <td style="background-color: blue">Buena</td>
+              </tr>
+              <tr>
+                <td>EChi_14</td>
+                <td>Caño Blanco</td>
+                <td>Diciembre</td>
+                <td>37</td>
+                <td>III</td>
+                <td style="background-color: yellow">Dudosa</td>
+                <td>Diciembre</td>
+                <td>0,65</td>
+                <td style="background-color: yellow">Regular</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <br>
+        <h3 class="colorTitulos miH3" style="color: #e76f2b">Análisis del riesgo asociado a la disponibilidad del
+          recurso hídrico</h3>
+        <p class="mt-3 colorLetra">
+          El análisis de riesgos se realiza con la información obtenida con el índice ICACOSU fa para todas las
+          estaciones y se comparará con las estaciones donde, para el índice BMWP/col, se obtuvo una calidad aceptable o
+          dudosa, esta última relacionándose como la calificación de regular denominada para los índices de calidad
+          fisicoquímicos.
+        </p>
+        <p class="mt-3 colorLetra">
+          Para la categorización de la amenaza por disponibilidad al recurso hídrico, se realiza una asignación de la
+          condición más desfavorable considerando que, para calidad Aceptable la amenaza será Baja; para calidad Regular
+          entonces la amenaza será Media, y para calidad Mala la amenaza se establecerá como Alta.
+        </p>
+        <p class="mt-3 colorLetra">
+          En la Tabla se presenta la información relacionada con la categorización de la amenaza asociada a la
+          disponibilidad del recurso hídrico, para lo cual se definió una columna definitiva denominada ?Amenaza por
+          Estación?, la cual establece para cada una la categoría más desfavorable obtenida durante cada campaña de
+          monitoreo.
+        </p>
+        <div class="table-responsive mt-3">
+          <table class="table table-striped table-hover text-center">
+            <caption>
+                <i class="colorLetra">En la Tabla se presentan las captaciones superficiales identificadas a lo largo del río Chichimene y sus tributarios, donde se evalúa la amenaza y la vulnerabilidad con el propósito de establecer las condiciones de riesgo asociadas a la disponibilidad del recurso hídrico./i>
+            </caption>
+            <thead>
+              <h5 class="colorTitulos miH5" style="color: #e76f2b">Categorización de la amenaza asociada a la
+                disponibilidad del recurso hídrico.</h5>
+              <tr class="table-dark colorLetra">
+                <th>CODIGO ESTACIÓN</th>
+                <th>NOMBRE ESTACIÓN</th>
+                <th>CAMPAÑA 2013</th>
+                <th>BMWP-COL</th>
+                <th>ICACOSU FA</th>
+                <th>EVALUACIÓN CALIDAD</th>
+                <th>AMENAZA POR CAMPAÑA</th>
+                <th>AMENAZA POR ESTACIÓN</th>
+              </tr>
+            </thead>
+            <tbody class="colorLetra">
+              <tr>
+                <td>EChi_01</td>
+                <td>Caño San José</td>
+                <td>Octubre</td>
+                <td style="background-color: yellow">Dudosa</td>
+                <td style="background-color: green">Aceptable</td>
+                <td>Regular</td>
+                <td>Media</td>
+                <td>Media</td>
+              </tr>
+              <tr>
+                <td>Diciembre</td>
+                <td style="background-color: green">Aceptable</td>
+                <td style="background-color: green">Aceptable</td>
+                <td>Aceptable</td>
+                <td>Baja</td>
+              </tr>
+              <tr>
+                <td>EChi_02</td>
+                <td>Caño San José</td>
+                <td>Octubre</td>
+                <td>Regular</td>
+                <td>Regular</td>
+                <td>Media</td>
+                <td>Media</td>
+              </tr>
+              <tr>
+                <td>Diciembre</td>
+                <td style="background-color: green">Aceptable</td>
+                <td>Aceptable</td>
+                <td>Baja</td>
+              </tr>
+              <tr>
+                <td>EChi_03</td>
+                <td>Caño Yeguas</td>
+                <td>Octubre</td>
+                <td style="background-color: yellow">Dudosa</td>
+                <td>Regular</td>
+                <td>Regular</td>
+                <td>Media</td>
+                <td>Media</td>
+              </tr>
+              <tr>
+                <td>Diciembre</td>
+                <td style="background-color: green">Aceptable</td>
+                <td>Aceptable</td>
+                <td>Baja</td>
+              </tr>
+              <tr>
+                <td>EChi_04</td>
+                <td>Río Chichimene</td>
+                <td>Octubre</td>
+                <td>Regular</td>
+                <td>Regular</td>
+                <td>Media</td>
+                <td>Media</td>
+              </tr>
+              <tr>
+                <td>Diciembre</td>
+                <td style="background-color: green">Aceptable</td>
+                <td style="background-color: green">Aceptable</td>
+                <td>Aceptable</td>
+                <td>Baja</td>
+              </tr>
+              <tr>
+                <td>EChi_05</td>
+                <td>Caño Chavisnavis</td>
+                <td>Diciembre</td>
+                <td style="background-color: green">Aceptable</td>
+                <td>Aceptable</td>
+                <td>Baja</td>
+                <td>Baja</td>
+              </tr>
+              <tr>
+                <td>EChi_06</td>
+                <td>Caño Tres Rotos</td>
+                <td>Diciembre</td>
+                <td style="background-color: green">Aceptable</td>
+                <td>Aceptable</td>
+                <td>Baja</td>
+                <td>Media</td>
+              </tr>
+              <tr>
+                <td>Diciembre</td>
+                <td style="background-color: yellow">Dudosa</td>
+                <td>Regular</td>
+                <td>Regular</td>
+                <td>Media</td>
+              </tr>
+              <tr>
+                <td>EChi_07</td>
+                <td>Río Chichimene</td>
+                <td>Octubre</td>
+                <td style="background-color: yellow">Dudosa</td>
+                <td>Regular</td>
+                <td>Regular</td>
+                <td>Media</td>
+                <td>Media</td>
+              </tr>
+              <tr>
+                <td>Diciembre</td>
+                <td style="background-color: green">Aceptable</td>
+                <td style="background-color: green">Aceptable</td>
+                <td>Aceptable</td>
+                <td>Baja</td>
+              </tr>
+              <tr>
+                <td>EChi_08</td>
+                <td>Caño Arrecifes</td>
+                <td>Octubre</td>
+                <td style="background-color: yellow">Dudosa</td>
+                <td style="background-color: green">Aceptable</td>
+                <td>Regular</td>
+                <td>Media</td>
+                <td>Media</td>
+              </tr>
+              <tr>
+                <td>Diciembre</td>
+                <td style="background-color: yellow">Dudosa</td>
+                <td style="background-color: green">Aceptable</td>
+                <td>Regular</td>
+                <td>Media</td>
+              </tr>
+              <tr>
+                <td>EChi_09</td>
+                <td>Río Chichimene</td>
+                <td>Octubre</td>
+                <td style="background-color: yellow">Dudosa</td>
+                <td style="background-color: green">Aceptable</td>
+                <td>Regular</td>
+                <td>Media</td>
+                <td>Media</td>
+              </tr>
+              <tr>
+                <td>Diciembre</td>
+                <td style="background-color: green">Aceptable</td>
+                <td style="background-color: green">Aceptable</td>
+                <td>Aceptable</td>
+                <td>Baja</td>
+              </tr>
+              <tr>
+                <td>EChi_10</td>
+                <td>Río Chichimene</td>
+                <td>Octubre</td>
+                <td style="background-color: green">Aceptable</td>
+                <td>Aceptable</td>
+                <td>Baja</td>
+                <td>Baja</td>
+              </tr>
+              <tr>
+                <td>Diciembre</td>
+                <td style="background-color: green">Aceptable</td>
+                <td>Aceptable</td>
+                <td>Baja</td>
+              </tr>
+              <tr>
+                <td>EChi_11</td>
+                <td>Río Chichimene</td>
+                <td>Diciembre</td>
+                <td style="background-color: green">Aceptable</td>
+                <td>Aceptable</td>
+                <td>Baja</td>
+                <td>Baja</td>
+              </tr>
+              <tr>
+                <td>EChi_12</td>
+                <td>Río Chichimene</td>
+                <td>Octubre</td>
+                <td style="background-color: green">Aceptable</td>
+                <td>Aceptable</td>
+                <td>Baja</td>
+                <td>Baja</td>
+              </tr>
+              <tr>
+                <td>Diciembre</td>
+                <td>Buena</td>
+                <td>Buena</td>
+                <td>Baja</td>
+              </tr>
+              <tr>
+                <td>EChi_13</td>
+                <td>Caño Chipas</td>
+                <td>Diciembre</td>
+                <td style="background-color: yellow">Dudosa</td>
+                <td>Buena</td>
+                <td>Regular</td>
+                <td>Media</td>
+                <td>Media</td>
+              </tr>
+              <tr>
+                <td>EChi_14</td>
+                <td>Caño Blanco</td>
+                <td>Diciembre</td>
+                <td style="background-color: yellow">Dudosa</td>
+                <td>Regular</td>
+                <td>Regular</td>
+                <td>Media</td>
+                <td>Media</td>
+              </tr>
+            </tbody>
+
+          </table>
+        </div>
+        <div class="table-responsive mt-3">
+            <table class="table table-striped table-hover text-center">
+              
+              <thead>
+                <h5 class="colorTitulos miH5" style="color: #e76f2b">Riesgo asociado a la disponibilidad del recurso hídrico sobre el río Chichimene y sus afluentes.</h5>
+                <tr class="table-dark colorLetra">
+                    <th rowspan="2">NOMBRE USUARIO</th>
+                    <th colspan="2">COORDENADAS</th>
+                    <th rowspan="2">VEREDA</th>
+                    <th rowspan="2">PREDIO</th>
+                    <th rowspan="2">FUENTE HÍDRICA CAPTACIÓN</th>
+                    <th rowspan="2">USO</th>
+                    <th rowspan="2">VULNERABILIDAD</th>
+                    <th rowspan="2">AMENAZA</th>
+                    <th rowspan="2">RIESGO</th>
+                </tr>
+                <tr class="table-dark colorLetra">
+                    <th>X</th>
+                    <th>Y</th>
+                </tr>
+              </thead>
+              <tbody class="colorLetra">
+                  <tr>
+                      <td>Palmeras del Llano</td>
+                      <td>1049632</td>
+                      <td>934649</td>
+                      <td>Dinamarca</td>
+                      <td>Palmeras del Llano</td>
+                      <td>Caño Perú</td>
+                      <td>Industrial</td>
+                      <td style="background-color: green">Baja</td>
+                      <td style="background-color: orange">Media</td>
+                      <td style="background-color: orange">Medio</td>
+                      </tr>
+                      <tr>
+                      <td>Alianza Oriental S.A.</td>
+                      <td>1055146</td>
+                      <td>933550</td>
+                      <td>La Loma</td>
+                      <td>Alianza Oriental S.A.</td>
+                      <td>Caño Yeguas</td>
+                      <td>Industrial</td>
+                      <td style="background-color: green">Baja</td>
+                      <td style="background-color: orange">Media</td>
+                      <td style="background-color: orange">Medio</td>
+                      </tr>
+                      <tr>
+                      <td>Industria Aceites Manuelita S.A.</td>
+                      <td>1081612</td>
+                      <td>921266</td>
+                      <td>Patagonia</td>
+                      <td>Hacienda Yaguarito</td>
+                      <td>Río Chichimene</td>
+                      <td>Agrícola,<br/>
+                      Industrial</td>
+                      <td style="background-color: orange">Media</td>
+                      <td style="background-color: orange">Media</td>
+                      <td style="background-color: orange">Medio</td>
+                      </tr>
+              </tbody>
+            </table>
+        </div>
+        <p class="mt-3 colorLetra">
+            Al realizar un análisis comparativo entre los riesgos evaluados, se presenta un Riesgo Alto asociado a la oferta y disponibilidad del recurso hídrico para el río Chichimene y sus afluentes, tal como se evidencia en el mapa.
+        </p>
+        <div class="card mb-3 shadow fondoBlanco ">
+            <img class="card-img-top" src="http://placehold.it/800x250" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title colorLetra miH5">mapa pliego riesgos</h5>
+              <!-- <p class="card-text"></p> -->
+              <p class="card-text"><small class="colorLetra">Fuente: ...</small></p>
+            </div>
+          </div>
+        <p class="mt-3 colorLetra">
+            La evaluación del riesgo asociado a la disponibilidad del recurso hídrico, se realiza a partir de la calidad del agua mediante el análisis cualitativo de los resultados del índice de calidad fisicoquímico ICACOSU fa y el índice biológico BMWP/col, por tramos. En la Tabla se presenta, de manera consolidada, el resultado de los índices BMWP/col e ICACOSU fa, determinados con base en los resultados de los monitoreos de calidad del agua realizados en las estaciones definidas sobre el río Chichimene y sus tributarios.
+        </p>
+        <br>
+        <h3 class="colorTitulos miH3" style="color: #e76f2b">Índice de calidad fisicoquímico ICACOSU fa</h3>
+        <p class="mt-3 colorLetra">
+            El indicador de calidad general para corrientes superficiales ICACOSU global, el cual se basa en variables fisicoquímicas, biológicas y de caudal, representa un diagnóstico de la calidad hídrica del río Chichimene de acuerdo con lo planteado por el IDEAM (2009) y sugerido por el Ministerio de Ambiente y Desarrollo Sostenible, en el marco de la formulación de la política hídrica y el plan hídrico nacional.
+        </p>
+        <br>
+        <h3 class="colorTitulos miH3" style="color: #e76f2b">Índice biológico BMWP/col</h3>
+        <p class="mt-3 colorLetra">
+            El BMWP (Biological Monitoring Water Party) fue creado (1983) con la finalidad de evaluar la condición ecológica de un cuerpo de agua empleando familias de macroinvertebrados; se utiliza la versión colombiana (BMWP/Col) propuesta en la guía metodología del PORH para estimar la calidad del agua hidrobiológica.
+        </p>
+        <div class="row">
+            <div class="col">
+              <button class="btn btn-secondary btn-block colorLetra miP">Índice biológica campaña octubre</button>
+            </div>
+            <!-- Modal DUD -->
+            <div class="col">
+              <button class="btn btn-secondary btn-block colorLetra miP">Índice biológica campaña diciembre</button>
+            </div>
+        </div>
+        <p class="mt-3 colorLetra">
+            Se presenta la proyección de uso del agua e índice de vulnerabilidad al desabastecimiento para el río Chichimene y sus tributarios respectivamente, con base en los escenarios definidos para el plan de ordenamiento del recurso hídrico a corto, mediano y largo plazo (2, 5 y 10 años respectivamente)
+        </p>
+        <div class="table-responsive mt-3">
+          <table class="table table-striped table-hover text-center">
+            <thead>
+              <tr class="table-dark colorLetra">
+                  <th rowspan="2">CORRIENTE</th>
+                  <th colspan="3">IVH PROYECTADO NORMAL</th>
+                  <th colspan="3">IVH PROYECTADO SECO</th>
+              </tr>
+              <tr class="table-dark colorLetra">
+                  <th>2016</th>
+                  <th>2019</th>
+                  <th>2024</th>
+                  <th>2016</th>
+                  <th>2019</th>
+                  <th>2024</th>
+              </tr>
+            </thead>
+            <tbody class="colorLetra">
+                <tr>
+                    <td>Caño N.N. 1</td>
+                    <td style="background-color: red">Muy Alto</td>
+                    <td style="background-color: red">Muy Alto</td>
+                    <td style="background-color: red">Muy Alto</td>
+                    <td style="background-color: red">Muy Alto</td>
+                    <td style="background-color: red">Muy Alto</td>
+                    <td style="background-color: red">Muy Alto</td>
+                    </tr>
+                    <tr>
+                    <td>Caño N.N. 2</td>
+                    <td style="background-color: red">Muy Alto</td>
+                    <td style="background-color: red">Muy Alto</td>
+                    <td style="background-color: red">Muy Alto</td>
+                    <td style="background-color: red">Muy Alto</td>
+                    <td style="background-color: red">Muy Alto</td>
+                    <td style="background-color: red">Muy Alto</td>
+                    </tr>
+                    <tr>
+                    <td>Caño Chipas</td>
+                    <td style="background-color: red">Muy Alto</td>
+                    <td style="background-color: red">Muy Alto</td>
+                    <td style="background-color: red">Muy Alto</td>
+                    <td style="background-color: red">Muy Alto</td>
+                    <td style="background-color: red">Muy Alto</td>
+                    <td style="background-color: red">Muy Alto</td>
+                    </tr>
+                    <tr>
+                    <td>Caño Piedras</td>
+                    <td style="background-color: red">Muy Alto</td>
+                    <td style="background-color: red">Muy Alto</td>
+                    <td style="background-color: red">Muy Alto</td>
+                    <td style="background-color: red">Muy Alto</td>
+                    <td style="background-color: red">Muy Alto</td>
+                    <td style="background-color: red">Muy Alto</td>
+                    </tr>
+                    <tr>
+                    <td>Caño Arrecifes</td>
+                    <td style="background-color: red">Muy Alto</td>
+                    <td style="background-color: red">Muy Alto</td>
+                    <td style="background-color: red">Muy Alto</td>
+                    <td style="background-color: red">Muy Alto</td>
+                    <td style="background-color: red">Muy Alto</td>
+                    <td style="background-color: red">Muy Alto</td>
+                    </tr>
+                    <tr>
+                    <td>Caño N.N. 3</td>
+                    <td style="background-color: red">Muy Alto</td>
+                    <td style="background-color: red">Muy Alto</td>
+                    <td style="background-color: red">Muy Alto</td>
+                    <td style="background-color: red">Muy Alto</td>
+                    <td style="background-color: red">Muy Alto</td>
+                    <td style="background-color: red">Muy Alto</td>
+                    </tr>
+                    <tr>
+                    <td>Caño N.N. 4</td>
+                    <td style="background-color: red">Muy Alto</td>
+                    <td style="background-color: red">Muy Alto</td>
+                    <td style="background-color: red">Muy Alto</td>
+                    <td style="background-color: red">Muy Alto</td>
+                    <td style="background-color: red">Muy Alto</td>
+                    <td style="background-color: red">Muy Alto</td>
+                    </tr>
+                    <tr>
+                    <td>Caño Tres Rotos</td>
+                    <td style="background-color: red">Muy Alto</td>
+                    <td style="background-color: red">Muy Alto</td>
+                    <td style="background-color: red">Muy Alto</td>
+                    <td style="background-color: red">Muy Alto</td>
+                    <td style="background-color: red">Muy Alto</td>
+                    <td style="background-color: red">Muy Alto</td>
+                    </tr>
+                    <tr>
+                    <td>Caño Blanco</td>
+                    <td style="background-color: red">Muy Alto</td>
+                    <td style="background-color: red">Muy Alto</td>
+                    <td style="background-color: red">Muy Alto</td>
+                    <td style="background-color: red">Muy Alto</td>
+                    <td style="background-color: red">Muy Alto</td>
+                    <td style="background-color: red">Muy Alto</td>
+                    </tr>
+                    <tr>
+                    <td>Caño Chavisnavis</td>
+                    <td style="background-color: red">Muy Alto</td>
+                    <td style="background-color: red">Muy Alto</td>
+                    <td style="background-color: red">Muy Alto</td>
+                    <td style="background-color: red">Muy Alto</td>
+                    <td style="background-color: red">Muy Alto</td>
+                    <td style="background-color: red">Muy Alto</td>
+                    </tr>
+                    <tr>
+                    <td>Caño Las Brisas</td>
+                    <td style="background-color: red">Muy Alto</td>
+                    <td style="background-color: red">Muy Alto</td>
+                    <td style="background-color: red">Muy Alto</td>
+                    <td style="background-color: red">Muy Alto</td>
+                    <td style="background-color: red">Muy Alto</td>
+                    <td style="background-color: red">Muy Alto</td>
+                    </tr>
+                    <tr>
+                    <td>Caño Yeguas</td>
+                    <td style="background-color: red">Muy Alto</td>
+                    <td style="background-color: red">Muy Alto</td>
+                    <td style="background-color: red">Muy Alto</td>
+                    <td style="background-color: red">Muy Alto</td>
+                    <td style="background-color: red">Muy Alto</td>
+                    <td style="background-color: red">Muy Alto</td>
+                    </tr>
+                    <tr>
+                    <td>S/N Río Chichimene</td>
+                    <td style="background-color: red">Muy Alto</td>
+                    <td style="background-color: red">Muy Alto</td>
+                    <td style="background-color: red">Muy Alto</td>
+                    <td style="background-color: red">Muy Alto</td>
+                    <td style="background-color: red">Muy Alto</td>
+                    <td style="background-color: red">Muy Alto</td>
+                    </tr>
+                    <tr>
+                    <td>TOTAL Rio Chichimene</td>
+                    <td style="background-color: red">Muy Alto</td>
+                    <td style="background-color: red">Muy Alto</td>
+                    <td style="background-color: red">Muy Alto</td>
+                    <td style="background-color: red">Muy Alto</td>
+                    <td style="background-color: red">Muy Alto</td>
+                    <td style="background-color: red">Muy Alto</td>
+                    </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+  <!-- /.container -->
+
+  <!-- Footer -->
+  <footer class="py-5 mt-5 MenuFooter">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <center>
+            <img src="./img/logo_horizontal_gris.png" alt="" width="210" height="55" class="contraste">
+          </center>
+          <p class="m-0 text-center MenuFooter">Sede Principal Cra 35 No 25-57 Barrio San Benito Villavicencio - Meta
+            (Colombia) PBX (8) 6730420</p>
+          <p class="m-0 text-center MenuFooter">Línea Gratuita: 01 8000 117 177 - Correo electrónico: <a
+              href="mailto:info@cormacarena.gov.co">info@cormacarena.gov.co</a> Notificaciones Judiciales: <a
+              href="mailto:notificacionesjudiciales@cormacarena.gov.co">notificacionesjudiciales@cormacarena.gov.co</a>
+          </p>
+          <p class="m-0 text-center MenuFooter">Horario de Atención Lunes a Viernes de 8:00 a.m. a 12:00 m. y 2:00 p.m.
+            a 6:00 p.m.</p>
+          <p class="m-0 text-center MenuFooter">Copyright © Gestión de Servicios de Información y Tecnología - Todos los
+            derechos reservados para CORMACARENA</p>
+          <br>
+          <center>
+            <a href="https://www.sgs.co/es-es/certified-clients-and-products/certified-client-directory"
+              target="_blank"><img src="./img/logos_sgs_2.png" alt="" width="180" height="50" class="contraste"></a>
+          </center>
+        </div>
+      </div>
+    </div>
+
+    <!-- /.container -->
+
+  </footer>
+
+  <!-- accesibilidad -->
+  <div class=" row panel-flotante">
+    <div class="contenedor-accesibilidad">
+      <a href="#" class="altoContraste">
+        <img src="../../img/accesibilidad/contrast.png" width="35" height="35" alt="Cambiar contraste" title="">
+      </a>
+    </div>
+    <div class="contenedor-accesibilidad">
+      <a href="#" class="disminuirFont">
+        <img src="../../img/accesibilidad/puntaje-menor.png" width="35" height="35" alt="Reducir tamaÃ±o del texto"
+          title="">
+      </a>
+    </div>
+    <div class="contenedor-accesibilidad">
+      <a href="#" class="resetearFont">
+        <img src="../../img/accesibilidad/puntaje-r.png" width="35" height="35" alt="Reducir tamaÃ±o del texto"
+          title="">
+      </a>
+    </div>
+    <div class="contenedor-accesibilidad">
+      <a href="#" class="aumentarFont">
+        <img src="../../img/accesibilidad/puntaje-mayor.png" width="35" height="35" alt="Aumentar tamaÃ±o del texto"
+          title="">
+      </a>
+    </div>
+    <div class="contenedor-accesibilidad">
+      <a href="https://centroderelevo.gov.co" class="" target="_blank">
+        <img src="../../img/accesibilidad/relevo_0.png" width="35" height="35" alt="Ir al centro de relevo" title="">
+      </a>
+    </div>
+  </div>
+
+  <script src="../../js/accesibilidad.js" type="text/javascript"></script>
+
+  <script src="../../js/search.js"></script>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="../../vendor/jquery/jquery.min.js"></script>
+  <script src="../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../../vendor/popper/popper.min.js"></script>
+  <script src="../../js/index.js"></script>
+
+</body>
+
+</html>
