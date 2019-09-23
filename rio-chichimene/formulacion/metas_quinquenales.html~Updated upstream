@@ -9,7 +9,7 @@
   <meta name="author" content="">
 
 
-  <title>PORH Departamento del Meta | Río Chichimene - Líneas Estratégicas</title>
+  <title>PORH Departamento del Meta | Río Acaciitas - Metas quinquenales</title>
 
   <!-- Bootstrap core CSS -->
   <link href="../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -17,7 +17,6 @@
   <!-- Custom styles -->
   <link href="../../css/estilos-index.css" rel="stylesheet">
   <link rel="stylesheet" href="../../css/style.css">
-  <link rel="stylesheet" href="../../css/rio-chichimene/estilos.css">
   <link rel="stylesheet" href="../../css/estilos.css">
 
 
@@ -178,37 +177,37 @@
                 </li>
                 <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle colorLetra" href="#">Formulación</a>
                   <ul class="dropdown-menu fondoBlanco miBody">
-                    <a href="../formulacion/formulacion.html">
+                    <a href="./formulacion.html">
                       <h6 class="dropdown-header colorLetra miH6">Formulación</h6>
                     </a>
                     <li><a class="dropdown-item colorLetra"
-                        href="../formulacion/clasificacion_aguas.html">Clasificación aguas</a></li>
+                        href="./clasificacion_aguas.html">Clasificación aguas</a></li>
                     <li><a class="dropdown-item colorLetra"
-                        href="../formulacion/inventario_usuarios.html">Inventario de usuarios</a></li>
+                        href="./inventario_usuarios.html">Inventario de usuarios</a></li>
                     <li><a class="dropdown-item colorLetra"
-                        href="../formulacion/objetivos_calidad.html">Objetivos
+                        href="./objetivos_calidad.html">Objetivos
                         de calidad</a></li>
                     <li><a class="dropdown-item colorLetra"
-                        href="../formulacion/zonas_uso.html">Zonas/condiciones
+                        href="./zonas_uso.html">Zonas/condiciones
                         de uso</a></li>
                     <li><a class="dropdown-item colorLetra"
-                        href="../formulacion/metas_quinquenales.html">Metas
+                        href="./metas_quineales.html">Metas
                         quinquenales</a></li>
                     <li><a class="dropdown-item colorLetra"
-                        href="../formulacion/estructuracion_porh.html">Estructuración del PORH</a></li>
+                        href="./estructuracion.html">Estructuración del PORH</a></li>
                   </ul>
                 </li>
                 <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle colorLetra" href="#">Líneas
                     estratégicas</a>
                   <ul class="dropdown-menu fondoBlanco miBody">
-                    <a href="lineas_estrategicas.html">
+                    <a href="../lineas-estrategicas/lineas_estrategicas.html">
                       <h6 class="dropdown-header colorLetra miH6">Líneas Estratégicas</h6>
                     </a>
                     <li><a class="dropdown-item colorLetra"
-                        href="instrumentacion.html">Instrumentación de la
+                        href="../lineas-estrategicas/instrumentacion.html">Instrumentación de la
                         corriente principal</a></li>
                     <li><a class="dropdown-item colorLetra"
-                        href="divulgacion.html">Divulgación de riesgos</a></li>
+                        href="../lineas-estrategicas/divulgacion.html">Divulgación de riesgos</a></li>
                   </ul>
                 </li>
               </ul>
@@ -357,50 +356,50 @@
                           target="_blank">Río Chichimene, Prospectiva: Escenarios de modelización</a></td>
                     </tr>
                     <tr>
-                      <td><a class="colorLetra" href="../formulacion/formulacion.html" target="_blank">Río
+                      <td><a class="colorLetra" href="formulacion.html" target="_blank">Río
                           Chichimene, Formulación</a></td>
                     </tr>
                     <tr>
-                      <td><a class="colorLetra" href="../formulacion/clasificacion_aguas.html"
+                      <td><a class="colorLetra" href="clasificacion_aguas.html"
                           target="_blank">Río Chichimene, Formulación: Clasificación del agua</a></td>
                     </tr>
                     <tr>
-                      <td><a class="colorLetra" href="../formulacion/inventario_usuarios.html"
+                      <td><a class="colorLetra" href="inventario_usuarios.html"
                           target="_blank">Río Chichimene, Formulación: Inventario de usuarios</a></td>
                     </tr>
                     <tr>
-                      <td><a class="colorLetra" href="../formulacion/objetivos_calidad.html"
+                      <td><a class="colorLetra" href="objetivos_calidad.html"
                           target="_blank">Río Chichimene, Formulación: Objetivos de calidad</a></td>
                     </tr>
                     <tr>
-                      <td><a class="colorLetra" href="../formulacion/zonas_uso.html" target="_blank">Río
+                      <td><a class="colorLetra" href="zonas_uso.html" target="_blank">Río
                           Chichimene, Formulación: Zona/Condiciones de Usos</a></td>
                     </tr>
                     <tr>
-                      <td><a class="colorLetra" href="../formulacion/metas_quineales.html"
+                      <td><a class="colorLetra" href="metas_quineales.html"
                           target="_blank">Río Chichimene, Formulación: Metas quinquenales</a></td>
                     </tr>
                     <tr>
-                      <td><a class="colorLetra" href="../formulacion/estructuracion.html"
+                      <td><a class="colorLetra" href="estructuracion.html"
                           target="_blank">Río Chichimene, Formulación: Estructuración del PORH</a></td>
                     </tr>
                     <tr>
-                      <td><a class="colorLetra" href="lineas_estrategicas.html"
+                      <td><a class="colorLetra" href="../lineas-estrategicas/lineas_estrategicas.html"
                           target="_blank">Río Chichimene, Líneas estratégicas</a></td>
                     </tr>
                     <tr>
-                      <td><a class="colorLetra" href="instrumentacion.html"
+                      <td><a class="colorLetra" href="../lineas-estrategicas/instrumentacion.html"
                           target="_blank">Río Chichimene, Líneas estratégicas: Instrumentación de la corriente principal</a>
                       </td>
                     </tr>
                     <tr>
-                      <td><a class="colorLetra" href="divulgacion.html"
+                      <td><a class="colorLetra" href="../lineas-estrategicas/divulgacion.html"
                           target="_blank">Río Chichimene, Líneas estratégicas: Divulgación de riesgos</a></td>
                     </tr>
                   </tbody>
                   </table>
                 </div>         
-             </div>
+            </div>
         </div>
       </div>
     </nav>
@@ -430,28 +429,16 @@
             <ol class="breadcrumb mapaNavFondo"  style="background-color: #5745a1">
                 <li class="breadcrumb-item"><a class="mapaNavLetra" href="../../index.html" style="color: #fff">Inicio</a></li>
                 <li class="breadcrumb-item"><a class="mapaNavLetra" href="../rio_acaciitas.html" style="color: #fff">Río Chichimene</a></li>
-                <li class="breadcrumb-item mapaNavLetra" style="color: #fff" aria-current="page">Líneas estratégicas</li>
-                <li class="breadcrumb-item mapaNavLetra" style="color: rgb(192, 192, 192)" aria-current="page">Instrumentación de la corriente principal</li>
+                <li class="breadcrumb-item mapaNavLetra" style="color: #fff" aria-current="page">Formulación</li>
+                <li class="breadcrumb-item mapaNavLetra" style="color: rgb(192, 192, 192)" aria-current="page">Metas quinquenales</li>
             </ol>
         </nav>
-        <div class="row">
-            <div class="col colorLetra">
-                <h1 class="miH1">INSTRUMENTACIÓN DE LA CORRIENTE PRINCIPAL - RÍO CHICHIMENE</h1>
+        <div class="row colorLetra">
+            <div class="col">
+                <h1 class="miH1">METAS QUINQUENALES</h1>
                 <hr class="my-2">
-                <h5>El objetivo de este proyecto es conservar los ecosistemas y los procesos hidrológicos de los que depende la oferta hídrica, para ello este proyectado esta orientado a la instrumentación del río Chichimene, partiendo de la instalacion en el corto plazo de estaciones limnimetricas por lo menos en tres puntos de la corriente principal: antes del trasvase, trasvase y cierre.</h5>
-                <p>Los objetivos del programa de monitoreo y seguimiento son:</p>
-                <ul>
-                    <li type="square">Verificar el cumplimiento de los objetivos y criterios de calidad del agua establecidos por la autoridad ambiental en cada uno de los tramos definidos como prioritarios.</li>
-                    <li type="square">Consolidar una base de datos de calidad del agua que sirva:</li>
-                    <ul>
-                        <li type="square">Como fuente de información a terceros.</li>
-                        <li type="square">Mejorar y complementar la información sobre los datos de entrada de los modelos de simulación.</li>
-                        <li type="square">Como fuente de información para la gestión de la calidad y cantidad del recurso hídrico a las CAR.</li>
-                    </ul>
-                </ul>
-                <p>Acceso en línea a la información en tiempo real del rio, suministrada por la estación hidrométrica implementada.</p> 
-                <br>
-                <button type="button" class="btn btn-primary btn-lg btn-block">Monitoreo del río</button>       
+                <h5>Metas quinquenales de carga contaminante definidas por cormacarena</h5>
+                <p>Se evidencia que el valor obtenido durante el monitoreo de vertimientos realizado en noviembre superó la meta propuesta para los dos parámetros, DBO5  y SST.</p>
             </div>
         </div>
         
