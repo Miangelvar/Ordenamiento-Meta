@@ -79,3 +79,32 @@ footer a:hover{
     font-size: 0.8rem;
   }
  }
+
+/* Estilos para el navegador lateral */
+.menuLateral{
+  background-color: #1f0b73;
+}
+.menuLateral button{
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+.menuLateral button:hover{
+  color: yellow;
+  transition: color 300ms linear;
+}
+
+
+.menuLateral a{
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+.menuLateral a:hover{
+  color: yellow;
+  transition: color 300ms linear;
+}
+
+.collapse .card-body .card-header:hover{
+  background-color: rgba(240, 240, 240, 1);
+}
