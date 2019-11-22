@@ -1,0 +1,970 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+  <meta charset="ISO-8859-1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Usuarios del agua del río Acaciitas">
+  <meta name="author" content="">
+
+
+  <title>PORH Departamento del Meta | Río Acacias - Definicion de objetivos y criterios de calidad por usos</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles -->
+  <link href="../../css/estilos-index.css" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/estilos.css">
+  <link rel="stylesheet" href="../../css/style.css">
+
+
+  <script src="../../js/jquery.js"></script>
+  <script src="../../js/jquery.dataTables.min.js"></script>
+
+</head>
+
+<body class="fondoBlanco miBody">
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-fixed-top fixed-top MenuFooter">
+    <div class="container">
+      <a class="navbar-brand MenuFooter" href="../../index.html">PORH</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="https://id.presidencia.gov.co/Paginas/presidencia.aspx"
+              style="width: 108px; height: 24px;">
+              <img class="img-fluid contraste" src="../../img/Logopresidencia.png" alt="Presidencia">
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://www.minambiente.gov.co" style="width: 108px; height: 24px;">
+              <img class="img-fluid contraste" src="../../img/Minambiente2.png" alt="Ministerio Ambiente">
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://www.cormacarena.gov.co" style="width: 108px; height: 24px;">
+              <img class="img-fluid contraste" src="../../img/logo_horizontal_gris.png" alt="Cormacarena">
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link MenuFooter" href="../../index.html">Inicio <span class="sr-only">(Página
+                actual)</span></a>
+          </li>
+          <li class="nav-item dropdown active">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Ríos
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="../../rio-chichimene/rio_chichimene.html">Río Chichimene</a>
+              <a class="dropdown-item" href="../../rio-acaciitas/rio_acaciitas.html">Río Acaciitas</a>
+              <!-- <div class="dropdown-divider"></div> -->
+              <a class="dropdown-item" href="../../rio-acacias/rio_acacias.html">Río Acacías</a>
+              <a class="dropdown-item" href="../../rio-orotoy/rio_orotoy.html">Río Orotoy</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Caños
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Caño 1</a>
+              <a class="dropdown-item" href="#">Caño 2</a>
+              <!-- <div class="dropdown-divider"></div> -->
+              <a class="dropdown-item" href="#">Caño 3</a>
+              <a class="dropdown-item" href="#">Caño 4</a>
+            </div>
+          </li>
+
+        </ul>
+        <input type="search" id="buscador" placeholder="Buscar aqui">
+        <div class="content-search">
+          <div class="content-table">
+            <table id="table">
+              <thead>
+                <tr>
+                  <td></td>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td><a class="colorLetra" href="../diagnostico/diagnostico.html" target="_blank">Río
+                      Acaciitas, Diagnóstico</a></td>
+                </tr>
+
+                <tr>
+                  <td><a class="colorLetra" href="../diagnostico/usuarios_agua.html" target="_blank">Río
+                      Acaciitas, Diagnóstico: Usuarios del agua</a></td>
+                </tr>
+
+                <tr>
+                  <td><a class="colorLetra" href="../diagnostico/calidad_hidrologica.html" target="_blank">Río
+                      Acaciitas, Diagnóstico: Calidad fisicoquímica e hidrobiológica</a></td>
+                </tr>
+
+                <tr>
+                  <td><a class="colorLetra" href="../diagnostico/vertimientos.html" target="_blank">Río
+                      Acaciitas, Diagnóstico: Vertimientos y aguas contaminantes</a></td>
+                </tr>
+
+                <tr>
+                  <td><a class="colorLetra" href="../diagnostico/oferta_hidrica.html" target="_blank">Río
+                      Acaciitas, Diagnóstico: Oferta hídrica y análisis de riesgo</a></td>
+                </tr>
+
+                <tr>
+                  <td><a class="colorLetra" href="../diagnostico/demanda_hidrica.html" target="_blank">Río
+                      Acaciitas, Diagnóstico: Demanda hídrica</a></td>
+                </tr>
+
+                <tr>
+                  <td><a class="colorLetra" href="../diagnostico/tenencia_tierra.html" target="_blank">Río
+                      Acaciitas, Diagnóstico: Tenencia de tierra</a></td>
+                </tr>
+
+                <tr>
+                  <td><a class="colorLetra" href="../prospectiva/prospectiva.html" target="_blank">Río
+                      Acaciitas, Prospectiva</a></td>
+                </tr>
+                <tr>
+                  <td><a class="colorLetra" href="../prospectiva/demanda_proyectada.html" target="_blank">Río Acaciitas,
+                      Prospectiva: Demanda proyectada</a></td>
+                </tr>
+                <tr>
+                  <td><a class="colorLetra" href="../prospectiva/usos_potenciales.html" target="_blank">Río
+                      Acaciitas, Prospectiva: Usos potenciales por tramos</a></td>
+                </tr>
+                <tr>
+                  <td><a class="colorLetra" href="../prospectiva/escenarios_modelizacion.html" target="_blank">Río
+                      Acaciitas, Prospectiva: escenarios modelizacion</a></td>
+                </tr>
+                <tr>
+                  <td><a class="colorLetra" href="../formulacion/formulacion.html" target="_blank">Río
+                      Acaciitas, Formulación</a></td>
+                </tr>
+                <tr>
+                  <td><a class="colorLetra" href="../formulacion/inventario_usuarios.html" target="_blank">Río
+                      Acaciitas, Formulación: Inventario de usuarios</a></td>
+                </tr>
+                <tr>
+                  <td><a class="colorLetra" href="../formulacion/objetivos_calidad.html" target="_blank">Río Acaciitas,
+                      Formulación: Objetivos de calidad</a></td>
+                </tr>
+                <tr>
+                  <td><a class="colorLetra" href="../formulacion/zonas_uso.html" target="_blank">Río
+                      Acaciitas, Formulación: zonas y condiciones de uso</a></td>
+                </tr>
+                <tr>
+                  <td><a class="colorLetra" href="../formulacion/metas_quinquenales.html" target="_blank">Río Acaciitas,
+                      Formulación: Meta quinquenales</a></td>
+                </tr>
+                <tr>
+                  <td><a class="colorLetra" href="../lineas-estrategicas/lineas_estrategicas.html" target="_blank">Río
+                      Acaciitas, Líneas estratégicas</a></td>
+                </tr>
+                <tr>
+                  <td><a class="colorLetra" href="../lineas-estrategicas/instrumentacion.html" target="_blank">Río
+                      Acaciitas, Líneas estratégicas: Instrumentación de la corriente principal</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td><a class="colorLetra" href="../lineas-estrategicas/divulgacion.html" target="_blank">Río
+                      Acaciitas, Líneas estratégicas: Divulgación de riesgos</a></td>
+                </tr>
+                <tr>
+                  <td><a class="colorLetra" href="../../rio-chichimene/diagnostico/diagnostico.html" target="_blank">Río
+                      Chichimene, Diagnóstico</a></td>
+                </tr>
+                <tr>
+                  <td><a class="colorLetra" href="../../rio-chichimene/diagnostico/usuarios_agua.html"
+                      target="_blank">Río
+                      Chichimene, Diagnóstico: Usuarios del agua</a></td>
+                </tr>
+                <tr>
+                  <td><a class="colorLetra" href="../../rio-chichimene/diagnostico/calidad_hidrologica.html"
+                      target="_blank">Río Chichimene, Diagnóstico: Calidad fisicoquímica e hidrobiológica</a></td>
+                </tr>
+                <tr>
+                  <td><a class="colorLetra" href="../../rio-chichimene/diagnostico/vertimientos.html"
+                      target="_blank">Río
+                      Chichimene, Diagnóstico: Vertimientos y cargas contaminantes</a></td>
+                </tr>
+                <tr>
+                  <td><a class="colorLetra" href="../../rio-chichimene/diagnostico/oferta_hidrica.html"
+                      target="_blank">Río
+                      Chichimene, Diagnóstico: Oferta hídrica y ánalisis de riesgos</a></td>
+                </tr>
+                <tr>
+                  <td><a class="colorLetra" href="../../rio-chichimene/diagnostico/demanda_hidrica.html"
+                      target="_blank">Río
+                      Chichimene, Diagnóstico: Demanda hídrica</a></td>
+                </tr>
+                <tr>
+                  <td><a class="colorLetra" href="../../rio-chichimene/diagnostico/tenencia_tierra.html"
+                      target="_blank">Río
+                      Chichimene, Diagnóstico: Tenencia de tierra</a></td>
+                </tr>
+                <tr>
+                  <td><a class="colorLetra" href="../../rio-chichimene/prospectiva/prospectiva.html" target="_blank">Río
+                      Chichimene, Prospectiva</a></td>
+                </tr>
+                <tr>
+                  <td><a class="colorLetra" href="../../rio-chichimene/prospectiva/demanda_proyectada.html"
+                      target="_blank">Río Chichimene, Prospectiva: Demanda proyectada</a></td>
+                </tr>
+                <tr>
+                  <td><a class="colorLetra" href="../../rio-chichimene/prospectiva/usos_potenciales.html"
+                      target="_blank">Río Chichimene, Prospectiva: Usos potenciales por tramos</a></td>
+                </tr>
+                <tr>
+                  <td><a class="colorLetra" href="../../rio-chichimene/prospectiva/escenarios_modelizacion.html"
+                      target="_blank">Río Chichimene, Prospectiva: Escenarios de modelización</a></td>
+                </tr>
+                <tr>
+                  <td><a class="colorLetra" href="../../rio-chichimene/formulacion/formulacion.html" target="_blank">Río
+                      Chichimene, Formulación</a></td>
+                </tr>
+                <tr>
+                  <td><a class="colorLetra" href="../../rio-chichimene/formulacion/clasificacion_aguas.html"
+                      target="_blank">Río Chichimene, Formulación: Clasificación del agua</a></td>
+                </tr>
+                <tr>
+                  <td><a class="colorLetra" href="../../rio-chichimene/formulacion/inventario_usuarios.html"
+                      target="_blank">Río Chichimene, Formulación: Inventario de usuarios</a></td>
+                </tr>
+                <tr>
+                  <td><a class="colorLetra" href="../../rio-chichimene/formulacion/objetivos_calidad.html"
+                      target="_blank">Río Chichimene, Formulación: Objetivos de calidad</a></td>
+                </tr>
+                <tr>
+                  <td><a class="colorLetra" href="../../rio-chichimene/formulacion/zonas_uso.html" target="_blank">Río
+                      Chichimene, Formulación: Zona/Condiciones de Usos</a></td>
+                </tr>
+                <tr>
+                  <td><a class="colorLetra" href="../../rio-chichimene/formulacion/metas_quinquenales.html"
+                      target="_blank">Río Chichimene, Formulación: Metas quinquenales</a></td>
+                </tr>
+                <tr>
+                  <td><a class="colorLetra" href="../../rio-chichimene/formulacion/estructuracion_porh.html"
+                      target="_blank">Río Chichimene, Formulación: Estructuración del PORH</a></td>
+                </tr>
+                <tr>
+                  <td><a class="colorLetra" href="../../rio-chichimene/lineas-estrategicas/lineas_estrategicas.html"
+                      target="_blank">Río Chichimene, Líneas estratégicas</a></td>
+                </tr>
+                <tr>
+                  <td><a class="colorLetra" href="../../rio-chichimene/lineas-estrategicas/instrumentacion.html"
+                      target="_blank">Río Chichimene, Líneas estratégicas: Instrumentación de la corriente principal</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td><a class="colorLetra" href="../../rio-chichimene/lineas-estrategicas/divulgacion.html"
+                      target="_blank">Río Chichimene, Líneas estratégicas: Divulgación de riesgos</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+
+
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Carousel -->
+  <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="../../img/Banners PORH-01.png" class="d-block w-100 contraste" alt="Banner PORH 1">
+      </div>
+      <div class="carousel-item">
+        <img src="../../img/Banners PORH-02.png" class="d-block w-100 contraste" alt="Banner PORH 2">
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+  <!-- Page Content -->
+  <div class="container mt-3 fondoBlanco">
+    <div class="row justify-content-between">
+      <div class="col-12 col-md-3 mb-2">
+        <div class="accordion" id="accordionExample">
+          <div class="card">
+            <div class="card-header menuLateral" id="headingOne">
+              <h2 class="mb-0">
+                <button class="btn btn-block shadow-none" type="button" data-toggle="collapse"
+                  data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  <b>Diagnóstico</b>
+                </button>
+              </h2>
+            </div>
+
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+              <div class="card-body p-0">
+                <div class="card-header m-0">
+                  <a class="btn btn-block shadow-none" href="../diagnostico/usuarios_agua.html">Usuarios del agua</a>
+                </div>
+                <div class="card-header m-0">
+                  <a class="btn btn-block shadow-none" href="../diagnostico/calidad_hidrologica.html">Calidad
+                    fisicoquímica e hidrobiológica</a>
+                </div>
+                <div class="card-header m-0">
+                  <a class="btn btn-block shadow-none" href="../diagnostico/definicion.html">Definicion de
+                    objetivos y criterios
+                    de calidad por usos</a>
+                </div>
+                <div class="card-header m-0">
+                  <a class="btn btn-block shadow-none" href="../diagnostico/seguimiento_monitoreo.html">Programa de
+                    segimiento y control</a>
+                </div>
+                <div class="card-header m-0">
+                  <a class="btn btn-block shadow-none" href="../diagnostico/metas_quinquenales.html">Metas
+                    quinquenales</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-9">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb mapaNavFondo menuLateral">
+            <li class="breadcrumb-item"><a class="mapaNavLetra" href="../../index.html">Inicio</a></li>
+            <li class="breadcrumb-item"><a class="mapaNavLetra" href="../rio_acacias.html">Río
+                Acacias</a></li>
+            <li class="breadcrumb-item"><a class="mapaNavLetra" href="diagnostico.html">Diagnóstico</a></li>
+            <li class="breadcrumb-item mapaNavLetra" style="color: rgb(192, 192, 192)" aria-current="page">Definicion de
+              objetivos y criterios
+              de calidad por usos
+            </li>
+          </ol>
+        </nav>
+        <div class="row">
+          <div class="col-12">
+            <h3 class="colorTitulos miH3" style="color: #e76f2b">Definicion de objetivos y criterios
+              de calidad por usos
+            </h3>
+            <p class="colorLetra">Se definieron cuatro tramos para el rio Acacias Pajure, los cuales contaran con
+              objetivos y
+              criterios de calidad a corto plazo (2012-2013), mediano plazo (2014-2016) y largo plazo
+              (2017-2021). A continuación se presentan los tramos del rio Acacias Pajure con su uso,
+              criterio de calidad y el objetivo de calidad:</p>
+            <hr class="my-3">
+            <h5 class="mt-2 colorTitulos miH3" style="color: #e76f2b">Tramo 1
+            </h5>
+            <p class="colorLetra">El tramo 1 definido desde el nacimiento del rio Acacias Pajure hasta el puente vía
+              nacional Acacias - Guamal en las coordenadas N: 0931165 - E: 1034469, se
+              estableció el uso de Consumo humano y doméstico, requiere tratamiento
+              convencional para el corto plazo, mediano plazo y largo plazo.
+            </p>
+            <hr class="my-3">
+            <h5 class="mt-2 colorTitulos miH3" style="color: #e76f2b">Tramo 2
+            </h5>
+            <p class="colorLetra">El tramo 2 definido desde el puente vía nacional Acacias - Guamal en las
+              coordenadas N: 0931165 - E: 1034469 hasta 300 metros aguas arriba antes del
+              cabezal de descarga de las aguas residuales de la PTAR del municipio de Acacias en
+              las coordenadas N: 0931889 - E: 1036223
+            </p>
+            <hr class="my-3">
+            <h5 class="mt-2 colorTitulos miH3" style="color: #e76f2b">Tramo 3
+            </h5>
+            <p class="colorLetra">El tramo 3 comienza a partir de la terminación del tramo 2 hasta 2 kilómetros
+              aguas abajo del cabeza de descarga de las aguas residuales de la PTAR del
+              municipio de Acacias en las coordenadas N: - E:
+            </p>
+            <hr class="my-3">
+            <h5 class="mt-2 colorTitulos miH3" style="color: #e76f2b">Tramo 4
+            </h5>
+            <p class="colorLetra">El tramo 4 comienza a partir de la terminación del tramo 3 hasta la
+              desembocadura del rio Acacias Pajure en el rio Metica en las coordenadas N:
+              0921037 - E: 1107224
+            </p>
+            <hr class="my-3">
+            <h5 class="mt-2 colorTitulos miH3" style="color: #e76f2b">Usos, criterios de calidad y objetivos del rio
+              Acacias Pajure
+            </h5>
+            <div class="table-responsive">
+              <table class="table table-hover table-striped text-center">
+                <thead class="thead-dark">
+                  <tr>
+                    <th rowspan="2" class="align-middle">Numero</th>
+                    <th rowspan="2" class="align-middle">
+                      Tramo
+                    </th>
+                    <th rowspan="2" class="align-middle">
+                      uso
+                    </th>
+                    <th rowspan="2" class="align-middle">
+                      criterio de calidad
+                    </th>
+                    <th rowspan="2" class="align-middle">
+                      unidad
+                    </th>
+                    <th rowspan="2" class="align-middle">Objetivo de calidad</th>
+                    <th colspan="3">Tiempo en anos</th>
+                  </tr>
+                  <tr>
+                    <th>Corto plazo</th>
+                    <th>Mediano plazo</th>
+                    <th>Largo plazo</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td rowspan="11" class="align-middle">1</td>
+                    <td rowspan="11" class="align-middle">Tramo 1: Desde el nacimiento del rio Acacias Pajure
+                      hasta el puente vía nacional Acacias - Guamal en las
+                      coordenadas N: 0931165 - E: 1034469
+                    </td>
+                    <td rowspan="11" class="align-middle">Consumo humano y
+                      doméstico (Requiere
+                      tratamiento
+                      convencional)
+                    </td>
+                    <td>DBO5</td>
+                    <td>mg/L</td>
+                    <td>5(3)</td>
+                    <td rowspan="11" class="align-middle" style="background-color: blue;"></td>
+                    <td rowspan="11" class="align-middle" style="background-color: blue;"></td>
+                    <td rowspan="11" class="align-middle" style="background-color: blue;"></td>
+                  </tr>
+                  <tr>
+                    <td>DQO</td>
+                    <td>mg/L</td>
+                    <td>7 (5)</td>
+                  </tr>
+                  <tr>
+                    <td>pH</td>
+                    <td>U de pH</td>
+                    <td>5,0-9,0 (1)</td>
+                  </tr>
+                  <tr>
+                    <td>Oxígeno disuelto</td>
+                    <td>mg/L</td>
+                    <td>4 (7)</td>
+                  </tr>
+                  <tr>
+                    <td>Conductividad eléctrica</td>
+                    <td>&mu; S/cm</td>
+                    <td>1000 (9)</td>
+                  </tr>
+                  <tr>
+                    <td>Coliformes fecales</td>
+                    <td>NMP</td>
+                    <td>2000 (1)</td>
+                  </tr>
+                  <tr>
+                    <td>Fósforo Total</td>
+                    <td>mg/L</td>
+                    <td>0,02 (13)</td>
+                  </tr>
+                  <tr>
+                    <td>Nitrógeno Nitratos (N-NO 3- )</td>
+                    <td>mg/L</td>
+                    <td>10 (11)</td>
+                  </tr>
+                  <tr>
+                    <td>Nitrógeno amoniacal (N-NH 3 )</td>
+                    <td>mg/L</td>
+                    <td>0,5 (14)(20)</td>
+                  </tr>
+                  <tr>
+                    <td>Grasas y aceites</td>
+                    <td>mg/L</td>
+                    <td>N.D</td>
+                  </tr>
+                  <tr>
+                    <td>Fenoles</td>
+                    <td>mg/L</td>
+                    <td>0,002 (8)</td>
+                  </tr>
+                  <tr>
+                    <td rowspan="11" class="align-middle">2</td>
+                    <td rowspan="11" class="align-middle">Tramo 2: Desde el puente vía nacional Acacias -
+                      Guamal en las coordenadas N: 0931165 - E: 1034469
+                      hasta 300 metros aguas arriba antes del cabezal de
+                      descarga de la PTAR del municipio de Acacias en las
+                      coordenadas N: 0931889 - E: 1036223</td>
+                    <td rowspan="11" class="align-middle">Consumo humano y
+                      doméstico (Requiere
+                      tratamiento
+                      convencional)
+                    </td>
+                    <td>DBO 5</td>
+                    <td>mg/L</td>
+                    <td>5 (3)</td>
+                    <td rowspan="11" style="background-color: green;"></td>
+                    <td rowspan="11" style="background-color: green;"></td>
+                    <td rowspan="11"></td>
+                  </tr>
+                  <tr>
+                    <td>DQO</td>
+                    <td>mg/L</td>
+                    <td>7 (5)</td>
+                  </tr>
+                  <tr>
+                    <td>pH</td>
+                    <td>U de pH</td>
+                    <td>5,0-9,0(1)(6)</td>
+                  </tr>
+                  <tr>
+                    <td>Oxígeno disuelto</td>
+                    <td>mg/L </td>
+                    <td>4(7)</td>
+                  </tr>
+                  <tr>
+                    <td>Conductividad
+                      eléctrica</td>
+                    <td>&mu;S/cm </td>
+                    <td>1000(9)</td>
+                  </tr>
+                  <tr>
+                    <td>Coliformes fecales</td>
+                    <td>NMP</td>
+                    <td>2000(1)(11)</td>
+                  </tr>
+                  <tr>
+                    <td>Fósforo Total</td>
+                    <td>mg/L</td>
+                    <td>0,02(13)</td>
+                  </tr>
+                  <tr>
+                    <td>Nitrógeno Nitratos
+                      (N-NO3-)</td>
+                    <td>mg/L</td>
+                    <td>10(11)</td>
+                  </tr>
+                  <tr>
+                    <td>Nitrógeno amoniacal
+                      (N-NH3)</td>
+                    <td>mg/L</td>
+                    <td>0,5(14)(20)</td>
+                  </tr>
+                  <tr>
+                    <td>Grasas y aceites</td>
+                    <td>mg/L</td>
+                    <td>ND</td>
+                  </tr>
+                  <tr>
+                    <td>Fenoles</td>
+                    <td>mg/L</td>
+                    <td>0,002(8)</td>
+                  </tr>
+                  <tr>
+                    <td rowspan="11" class="align-middle"> 2</td>
+                    <td rowspan="11" class="align-middle">300
+                      metros
+                      aguas
+                      arriba
+                      antes
+                      del
+                    </td>
+                    <td rowspan="11" class="align-middle">Recreativo contacto
+                      primario
+                    </td>
+                    <td>DBO 5</td>
+                    <td>mg/L</td>
+                    <td>5(3) (20)</td>
+                    <td rowspan="11"></td>
+                    <td rowspan="11"></td>
+                    <td rowspan="11" style="background-color: chocolate;"></td>
+                  </tr>
+                  <tr>
+                    <td>DQO</td>
+                    <td>mg/L</td>
+                    <td>7(5)</td>
+                  </tr>
+                  <tr>
+                    <td>pH</td>
+                    <td>U de pH</td>
+                    <td>5,0-9,0 (11)</td>
+                  </tr>
+                  <tr>
+                    <td>Oxígeno disuelto</td>
+                    <td>mg/L</td>
+                    <td>4 (20)</td>
+                  </tr>
+                  <tr>
+                    <td>Coliformes fecales</td>
+                    <td>NMP</td>
+                    <td>200(11)</td>
+                  </tr>
+                  <tr>
+                    <td>Nitrógeno amoniacal (N-NH 3 )</td>
+                    <td>mg/L</td>
+                    <td>2,5(20</td>
+                  </tr>
+                  <tr>
+                    <td>Grasas y aceites</td>
+                    <td>mg/L</td>
+                    <td>A</td>
+                  </tr>
+                  <tr>
+                    <td>Temperatura</td>
+                    <td>oC</td>
+                    <td>±5(20)</td>
+                  </tr>
+                  <tr>
+                    <td>Fenoles</td>
+                    <td>mg/L</td>
+                    <td>0,002(8)</td>
+                  </tr>
+                  <tr>
+                    <td>Materiales flotantes</td>
+                    <td> </td>
+                    <td>A</td>
+                  </tr>
+                  <tr>
+                    <td>Materiales
+                      sedimentables</td>
+                    <td> </td>
+                    <td>A</td>
+                  </tr>
+                  <tr>
+                    <td rowspan="11" class="align-middle"> 2</td>
+                    <td rowspan="11" class="align-middle">300
+                      metros
+                      aguas
+                      arriba
+                      antes
+                      del
+                    </td>
+                    <td rowspan="11" class="align-middle">Recreativo contacto
+                      primario
+                    </td>
+                    <td>DBO 5</td>
+                    <td>mg/L</td>
+                    <td>5(3) (20)</td>
+                    <td rowspan="11"></td>
+                    <td rowspan="11"></td>
+                    <td rowspan="11" style="background-color: chocolate;"></td>
+                  </tr>
+                  <tr>
+                    <td>DQO</td>
+                    <td>mg/L</td>
+                    <td>7(5)</td>
+                  </tr>
+                  <tr>
+                    <td>pH</td>
+                    <td>U de pH</td>
+                    <td>5,0-9,0 (11)</td>
+                  </tr>
+                  <tr>
+                    <td>Oxígeno disuelto</td>
+                    <td>mg/L</td>
+                    <td>4 (20)</td>
+                  </tr>
+                  <tr>
+                    <td>Coliformes fecales</td>
+                    <td>NMP</td>
+                    <td>200(11)</td>
+                  </tr>
+                  <tr>
+                    <td>Nitrógeno amoniacal (N-NH 3 )</td>
+                    <td>mg/L</td>
+                    <td>2,5(20</td>
+                  </tr>
+                  <tr>
+                    <td>Grasas y aceites</td>
+                    <td>mg/L</td>
+                    <td>A</td>
+                  </tr>
+                  <tr>
+                    <td>Temperatura</td>
+                    <td>oC</td>
+                    <td>±5(20)</td>
+                  </tr>
+                  <tr>
+                    <td>Fenoles</td>
+                    <td>mg/L</td>
+                    <td>0,002(8)</td>
+                  </tr>
+                  <tr>
+                    <td>Materiales flotantes</td>
+                    <td> </td>
+                    <td>A</td>
+                  </tr>
+                  <tr>
+                    <td>Materiales
+                      sedimentables</td>
+                    <td> </td>
+                    <td>A</td>
+                  </tr>
+
+                  <tr>
+                    <td rowspan="7" class="align-middle">3</td>
+                    <td rowspan="7" class="align-middle">Tramo 3: Desde la terminación del
+                      tramo 2 hasta 2 kilómetros aguas abajo
+                      del cabeza de descarga de la PTAR del
+                      municipio de Acacias en las
+                      coordenadas N: 0931871 - E: 1038161
+                    </td>
+                    <td rowspan="7" class="align-middle">Estético
+                    </td>
+                    <td>DBO 5</td>
+                    <td>mg/L</td>
+                    <td>30(4)</td>
+                    <td rowspan="7" style="background-color: purple;"></td>
+                    <td rowspan="7"></td>
+                    <td rowspan="7"></td>
+                  </tr>
+                  <tr>
+                    <td>DQO</td>
+                    <td>mg/L</td>
+                    <td>63</td>
+                  </tr>
+                  <tr>
+                    <td>pH</td>
+                    <td>U de pH</td>
+                    <td>4,5-9,0</td>
+                  </tr>
+                  <tr>
+                    <td>Oxígeno disuelto</td>
+                    <td>mg/L</td>
+                    <td>2</td>
+                  </tr>
+                  <tr>
+                    <td>Nitrógeno amoniacal (N-NH 3 )</td>
+                    <td>mg/L</td>
+                    <td>5(20)</td>
+                  </tr>
+                  <tr>
+                    <td>Grasas y aceites</td>
+                    <td>mg/L</td>
+                    <td>20(17)</td>
+                  </tr>
+                  <tr>
+                    <td>Temperatura</td>
+                    <td>oC</td>
+                    <td>4</td>
+                  </tr>
+
+                  <tr>
+                    <td rowspan="10" class="align-middle">3</td>
+                    <td rowspan="10" class="align-middle">Tramo 3: Desde la terminación del
+                      tramo 2 hasta 2 kilómetros aguas abajo
+                      del cabeza de descarga de la PTAR del
+                      municipio de Acacias en las
+                      coordenadas N: 0931871 - E: 1038161
+                    </td>
+                    <td rowspan="10" class="align-middle">Agrícola restringido
+                    </td>
+                    <td>DBO 5</td>
+                    <td>mg/L</td>
+                    <td>20</td>
+                    <td rowspan="10"></td>
+                    <td rowspan="10" style="background-color: yellow;"></td>
+                    <td rowspan="10" style="background-color: yellow;"></td>
+                  </tr>
+                  <tr>
+                    <td>DQO</td>
+                    <td>mg/L</td>
+                    <td>20(5)</td>
+                  </tr>
+                  <tr>
+                    <td>pH</td>
+                    <td>U de pH</td>
+                    <td>4,5-9,0(6)</td>
+                  </tr>
+                  <tr>
+                    <td>Oxígeno disuelto</td>
+                    <td>mg/L</td>
+                    <td>4(7)</td>
+                  </tr>
+                  <tr>
+                    <td>Conductividad
+                      eléctrica</td>
+                    <td>&mu;S/cm</td>
+                    <td>750(10)</td>
+                  </tr>
+                  <tr>
+                    <td>Coliformes fecales</td>
+                    <td>NMP</td>
+                    <td>5000(20)</td>
+                  </tr>
+                  <tr>
+                    <td>Nitrógeno amoniacal (N-NH 3 )</td>
+                    <td>mg/L</td>
+                    <td>5</td>
+                  </tr>
+                  <tr>
+                    <td>Grasas y aceites</td>
+                    <td>mg/L</td>
+                    <td>A</td>
+                  </tr>
+                  <tr>
+                    <td>RAS</td>
+                    <td>Fracción</td>
+                    <td>10(10)</td>
+                  </tr>
+                  <tr>
+                    <td>Materiales flotantes</td>
+                    <td></td>
+                    <td>A</td>
+                  </tr>
+
+                  <tr>
+                      <td rowspan="9"  class="align-middle">3</td>
+                      <td rowspan="9" class="align-middle">Tramo 3: Desde la terminación del
+                          tramo 2 hasta 2 kilómetros aguas abajo
+                          del cabeza de descarga de la PTAR del
+                          municipio de Acacias en las
+                          coordenadas N: 0931871 - E: 1038161
+                      </td>
+                      <td rowspan="9" class="align-middle">Agrícola restringido
+                      </td>
+                      <td>DBO 5</td>
+                      <td>mg/L</td>
+                      <td>20</td>
+                      <td rowspan="9" style="background-color: red;"></td>
+                      <td rowspan="9" style="background-color: red;"></td>
+                      <td rowspan="9" style="background-color: red;"></td>
+                    </tr>
+                    <tr>
+                      <td>DQO</td>
+                      <td>mg/L</td>
+                      <td>20(5)</td>
+                    </tr>
+                    <tr>
+                      <td>pH</td>
+                      <td>U de pH</td>
+                      <td>4,5-9,0(6)</td>
+                    </tr>
+                    <tr>
+                      <td>Oxígeno disuelto</td>
+                      <td>mg/L</td>
+                      <td>4(7)</td>
+                    </tr>
+                    <tr>
+                        <td>Conductividad
+                            eléctrica</td>
+                        <td>&mu;S/cm</td>
+                        <td>750(10)</td>
+                      </tr>
+                      <tr>
+                          <td>Coliformes fecales</td>
+                          <td>NMP</td>
+                          <td>5000(20)</td>
+                        </tr>
+                    <tr>
+                      <td>Nitrógeno amoniacal (N-NH 3 )</td>
+                      <td>mg/L</td>
+                      <td>5</td>
+                    </tr>
+                    <tr>
+                      <td>Grasas y aceites</td>
+                      <td>mg/L</td>
+                      <td>A</td>
+                    </tr>
+                    <tr>
+                        <td>RAS</td>
+                        <td>Fracción</td>
+                        <td>10(10)</td>
+                      </tr>
+                      <tr>
+                          <td>Materiales flotantes</td>
+                          <td></td>
+                          <td>A</td>
+                        </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+  <!-- /.container -->
+
+  <!-- Footer -->
+  <footer class="py-5 mt-5 MenuFooter">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <center>
+            <img src="../../img/logo_horizontal_gris.png" alt="Logo Cormacarena" width="210" height="55"
+              class="contraste">
+          </center>
+          <p class="m-0 text-center MenuFooter">Sede Principal Cra 35 No 25-57 Barrio San Benito Villavicencio - Meta
+            (Colombia) PBX (8) 6730420</p>
+          <p class="m-0 text-center MenuFooter">Línea Gratuita: 01 8000 117 177 - Correo electrónico: <a
+              href="mailto:info@cormacarena.gov.co">info@cormacarena.gov.co</a>
+          </p>
+          <p class="m-0 text-center MenuFooter">Horario de Atención Lunes a Viernes de 8:00 a.m. a 12:00 m. y 2:00 p.m.
+            a 6:00 p.m.</p>
+          <p class="m-0 text-center MenuFooter">Copyright © Gestión de Servicios de Información y Tecnología - Todos los
+            derechos reservados para CORMACARENA</p>
+          <br>
+          <center>
+            <a href="https://www.sgs.co/es-es/certified-clients-and-products/certified-client-directory"
+              target="_blank"><img src="../../img/logos_sgs_2.png" alt="Certificacion" width="180" height="50"
+                class="contraste"></a>
+          </center>
+        </div>
+      </div>
+    </div>
+
+    <!-- /.container -->
+
+  </footer>
+
+  <!-- accesibilidad -->
+  <div class=" row panel-flotante">
+    <div class="contenedor-accesibilidad">
+      <a href="#" class="altoContraste">
+        <img src="../../img/accesibilidad/contrast.png" width="35" height="35" alt="Cambiar contraste" title="">
+      </a>
+    </div>
+    <div class="contenedor-accesibilidad">
+      <a href="#" class="disminuirFont">
+        <img src="../../img/accesibilidad/puntaje-menor.png" width="35" height="35" alt="Reducir tamaño del texto"
+          title="">
+      </a>
+    </div>
+    <div class="contenedor-accesibilidad">
+      <a href="#" class="resetearFont">
+        <img src="../../img/accesibilidad/puntaje-r.png" width="35" height="35" alt="Reducir tamaño del texto" title="">
+      </a>
+    </div>
+    <div class="contenedor-accesibilidad">
+      <a href="#" class="aumentarFont">
+        <img src="../../img/accesibilidad/puntaje-mayor.png" width="35" height="35" alt="Aumentar tamaño del texto"
+          title="">
+      </a>
+    </div>
+    <div class="contenedor-accesibilidad">
+      <a href="https://centroderelevo.gov.co" class="" target="_blank">
+        <img src="../../img/accesibilidad/relevo_0.png" width="35" height="35" alt="Ir al centro de relevo" title="">
+      </a>
+    </div>
+  </div>
+  <script src="../../js/accesibilidad.js" type="text/javascript"></script>
+
+  <script src="../../js/search.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script src="../../vendor/jquery/jquery.min.js"></script>
+  <script src="../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../../vendor/popper/popper.min.js"></script>
+  <script src="../../js/index.js"></script>
+
+</body>
+
+</html>
